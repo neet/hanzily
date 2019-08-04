@@ -1,13 +1,13 @@
 declare module 'resources.json' {
   export interface Character {
-    ID: number;
-    Shinji: string;
-    Kyuji: string;
-    Kyuji_Unicode: string;
-    Kyuji_Unicode_with_IVS: string;
-    CID: string;
+    kyuji: string;
+    unicode: string;
   }
 
-  const resources: Character[];
+  export interface Resources {
+    [key: string]: Character;
+  }
+
+  const resources: Resources;
   export default resources;
 }

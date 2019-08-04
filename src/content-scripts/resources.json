@@ -1,3066 +1,385 @@
-[
-  {
-    "ID": 1,
-    "Shinji": "亜",
-    "Kyuji": "亞",
-    "Kyuji_Unicode": "U+4E9E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 6,
-    "Shinji": "悪",
-    "Kyuji": "惡",
-    "Kyuji_Unicode": "U+60E1",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 8,
-    "Shinji": "圧",
-    "Kyuji": "壓",
-    "Kyuji_Unicode": "U+58D3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 18,
-    "Shinji": "囲",
-    "Kyuji": "圍",
-    "Kyuji_Unicode": "U+570D",
-    "Kyuji_Unicode_with_IVS": "U+570D U+E0101",
-    "CID": "CID+13528"
-  },
-  {
-    "ID": 19,
-    "Shinji": "医",
-    "Kyuji": "醫",
-    "Kyuji_Unicode": "U+91AB",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 23,
-    "Shinji": "為",
-    "Kyuji": "爲",
-    "Kyuji_Unicode": "U+7232",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 42,
-    "Shinji": "壱",
-    "Kyuji": "壹",
-    "Kyuji_Unicode": "U+58F9",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 43,
-    "Shinji": "逸",
-    "Kyuji": "逸",
-    "Kyuji_Unicode": "U+FA67",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 55,
-    "Shinji": "飲",
-    "Kyuji": "飮",
-    "Kyuji_Unicode": "U+98EE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 56,
-    "Shinji": "隠",
-    "Kyuji": "隱",
-    "Kyuji_Unicode": "U+96B1",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 60,
-    "Shinji": "羽",
-    "Kyuji": "羽",
-    "Kyuji_Unicode": "U+FA1E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 72,
-    "Shinji": "栄",
-    "Kyuji": "榮",
-    "Kyuji_Unicode": "U+69AE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 73,
-    "Shinji": "営",
-    "Kyuji": "營",
-    "Kyuji_Unicode": "U+71DF",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 77,
-    "Shinji": "衛",
-    "Kyuji": "衞",
-    "Kyuji_Unicode": "U+885E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 82,
-    "Shinji": "駅",
-    "Kyuji": "驛",
-    "Kyuji_Unicode": "U+9A5B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 85,
-    "Shinji": "謁",
-    "Kyuji": "謁",
-    "Kyuji_Unicode": "U+FA62",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 87,
-    "Shinji": "円",
-    "Kyuji": "圓",
-    "Kyuji_Unicode": "U+5713",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 100,
-    "Shinji": "塩",
-    "Kyuji": "鹽",
-    "Kyuji_Unicode": "U+9E7D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 102,
-    "Shinji": "縁",
-    "Kyuji": "緣",
-    "Kyuji_Unicode": "U+7DE3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 103,
-    "Shinji": "艶",
-    "Kyuji": "艷",
-    "Kyuji_Unicode": "U+8277",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 108,
-    "Shinji": "応",
-    "Kyuji": "應",
-    "Kyuji_Unicode": "U+61C9",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 112,
-    "Shinji": "欧",
-    "Kyuji": "歐",
-    "Kyuji_Unicode": "U+6B50",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 113,
-    "Shinji": "殴",
-    "Kyuji": "毆",
-    "Kyuji_Unicode": "U+6BC6",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 114,
-    "Shinji": "桜",
-    "Kyuji": "櫻",
-    "Kyuji_Unicode": "U+6AFB",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 116,
-    "Shinji": "奥",
-    "Kyuji": "奧",
-    "Kyuji_Unicode": "U+5967",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 117,
-    "Shinji": "横",
-    "Kyuji": "橫",
-    "Kyuji_Unicode": "U+6A6B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 129,
-    "Shinji": "温",
-    "Kyuji": "溫",
-    "Kyuji_Unicode": "U+6EAB",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 130,
-    "Shinji": "穏",
-    "Kyuji": "穩",
-    "Kyuji_Unicode": "U+7A69",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 136,
-    "Shinji": "仮",
-    "Kyuji": "假",
-    "Kyuji_Unicode": "U+5047",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 140,
-    "Shinji": "価",
-    "Kyuji": "價",
-    "Kyuji_Unicode": "U+50F9",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 156,
-    "Shinji": "禍",
-    "Kyuji": "禍",
-    "Kyuji_Unicode": "U+FA52",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 167,
-    "Shinji": "画",
-    "Kyuji": "畫",
-    "Kyuji_Unicode": "U+756B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 175,
-    "Shinji": "会",
-    "Kyuji": "會",
-    "Kyuji_Unicode": "U+6703",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 181,
-    "Shinji": "悔",
-    "Kyuji": "悔",
-    "Kyuji_Unicode": "U+FA3D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 182,
-    "Shinji": "海",
-    "Kyuji": "海",
-    "Kyuji_Unicode": "U+FA45",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 186,
-    "Shinji": "絵",
-    "Kyuji": "繪",
-    "Kyuji_Unicode": "U+7E6A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 193,
-    "Shinji": "壊",
-    "Kyuji": "壞",
-    "Kyuji_Unicode": "U+58DE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 194,
-    "Shinji": "懐",
-    "Kyuji": "懷",
-    "Kyuji_Unicode": "U+61F7",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 203,
-    "Shinji": "慨",
-    "Kyuji": "慨",
-    "Kyuji_Unicode": "U+FA3E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 206,
-    "Shinji": "概",
-    "Kyuji": "槪",
-    "Kyuji_Unicode": "U+69EA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 212,
-    "Shinji": "拡",
-    "Kyuji": "擴",
-    "Kyuji_Unicode": "U+64F4",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 216,
-    "Shinji": "殻",
-    "Kyuji": "殼",
-    "Kyuji_Unicode": "U+6BBC",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 218,
-    "Shinji": "覚",
-    "Kyuji": "覺",
-    "Kyuji_Unicode": "U+89BA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 226,
-    "Shinji": "学",
-    "Kyuji": "學",
-    "Kyuji_Unicode": "U+5B78",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 227,
-    "Shinji": "岳",
-    "Kyuji": "嶽",
-    "Kyuji_Unicode": "U+5DBD",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 228,
-    "Shinji": "楽",
-    "Kyuji": "樂",
-    "Kyuji_Unicode": "U+6A02",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 235,
-    "Shinji": "喝",
-    "Kyuji": "喝",
-    "Kyuji_Unicode": "U+FA36",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 236,
-    "Shinji": "渇",
-    "Kyuji": "渴",
-    "Kyuji_Unicode": "U+6E34",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 240,
-    "Shinji": "褐",
-    "Kyuji": "褐",
-    "Kyuji_Unicode": "U+FA60",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 251,
-    "Shinji": "缶",
-    "Kyuji": "罐",
-    "Kyuji_Unicode": "U+7F50",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 256,
-    "Shinji": "巻",
-    "Kyuji": "卷",
-    "Kyuji_Unicode": "U+5377",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 258,
-    "Shinji": "陥",
-    "Kyuji": "陷",
-    "Kyuji_Unicode": "U+9677",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 272,
-    "Shinji": "勧",
-    "Kyuji": "勸",
-    "Kyuji_Unicode": "U+52F8",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 273,
-    "Shinji": "寛",
-    "Kyuji": "寬",
-    "Kyuji_Unicode": "U+5BEC",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 276,
-    "Shinji": "漢",
-    "Kyuji": "漢",
-    "Kyuji_Unicode": "U+FA47",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 279,
-    "Shinji": "関",
-    "Kyuji": "關",
-    "Kyuji_Unicode": "U+95DC",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 280,
-    "Shinji": "歓",
-    "Kyuji": "歡",
-    "Kyuji_Unicode": "U+6B61",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 285,
-    "Shinji": "館",
-    "Kyuji": "館",
-    "Kyuji_Unicode": "U+FA2C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 288,
-    "Shinji": "観",
-    "Kyuji": "觀",
-    "Kyuji_Unicode": "U+89C0",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 299,
-    "Shinji": "顔",
-    "Kyuji": "顏",
-    "Kyuji_Unicode": "U+984F",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 305,
-    "Shinji": "気",
-    "Kyuji": "氣",
-    "Kyuji_Unicode": "U+6C23",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 311,
-    "Shinji": "祈",
-    "Kyuji": "祈",
-    "Kyuji_Unicode": "U+FA4E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 315,
-    "Shinji": "既",
-    "Kyuji": "既",
-    "Kyuji_Unicode": "U+FA42",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 320,
-    "Shinji": "帰",
-    "Kyuji": "歸",
-    "Kyuji_Unicode": "U+6B78",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 324,
-    "Shinji": "亀",
-    "Kyuji": "龜",
-    "Kyuji_Unicode": "U+9F9C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 334,
-    "Shinji": "器",
-    "Kyuji": "器",
-    "Kyuji_Unicode": "U+FA38",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 341,
-    "Shinji": "偽",
-    "Kyuji": "僞",
-    "Kyuji_Unicode": "U+50DE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 346,
-    "Shinji": "戯",
-    "Kyuji": "戲",
-    "Kyuji_Unicode": "U+6232",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 348,
-    "Shinji": "犠",
-    "Kyuji": "犧",
-    "Kyuji_Unicode": "U+72A7",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 364,
-    "Shinji": "旧",
-    "Kyuji": "舊",
-    "Kyuji_Unicode": "U+820A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 386,
-    "Shinji": "拠",
-    "Kyuji": "據",
-    "Kyuji_Unicode": "U+64DA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 387,
-    "Shinji": "挙",
-    "Kyuji": "擧",
-    "Kyuji_Unicode": "U+64E7",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 388,
-    "Shinji": "虚",
-    "Kyuji": "虛",
-    "Kyuji_Unicode": "U+865B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 403,
-    "Shinji": "峡",
-    "Kyuji": "峽",
-    "Kyuji_Unicode": "U+5CFD",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 404,
-    "Shinji": "挟",
-    "Kyuji": "挾",
-    "Kyuji_Unicode": "U+633E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 405,
-    "Shinji": "狭",
-    "Kyuji": "狹",
-    "Kyuji_Unicode": "U+72F9",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 410,
-    "Shinji": "強",
-    "Kyuji": "强",
-    "Kyuji_Unicode": "U+5F3A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 411,
-    "Shinji": "教",
-    "Kyuji": "敎",
-    "Kyuji_Unicode": "U+654E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 412,
-    "Shinji": "郷",
-    "Kyuji": "鄕",
-    "Kyuji_Unicode": "U+9115",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 418,
-    "Shinji": "響",
-    "Kyuji": "響",
-    "Kyuji_Unicode": "U+FA69",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 421,
-    "Shinji": "暁",
-    "Kyuji": "曉",
-    "Kyuji_Unicode": "U+66C9",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 434,
-    "Shinji": "勤",
-    "Kyuji": "勤",
-    "Kyuji_Unicode": "U+FA34",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 441,
-    "Shinji": "謹",
-    "Kyuji": "謹",
-    "Kyuji_Unicode": "U+FA63",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 445,
-    "Shinji": "区",
-    "Kyuji": "區",
-    "Kyuji_Unicode": "U+5340",
-    "Kyuji_Unicode_with_IVS": "U+5340 U+E0101",
-    "CID": "CID+13524"
-  },
-  {
-    "ID": 448,
-    "Shinji": "駆",
-    "Kyuji": "驅",
-    "Kyuji_Unicode": "U+9A45",
-    "Kyuji_Unicode_with_IVS": "U+9A45 U+E0101",
-    "CID": "CID+13628"
-  },
-  {
-    "ID": 464,
-    "Shinji": "勲",
-    "Kyuji": "勳",
-    "Kyuji_Unicode": "U+52F3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 465,
-    "Shinji": "薫",
-    "Kyuji": "薰",
-    "Kyuji_Unicode": "U+85B0",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 473,
-    "Shinji": "径",
-    "Kyuji": "徑",
-    "Kyuji_Unicode": "U+5F91",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 474,
-    "Shinji": "茎",
-    "Kyuji": "莖",
-    "Kyuji_Unicode": "U+8396",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 479,
-    "Shinji": "恵",
-    "Kyuji": "惠",
-    "Kyuji_Unicode": "U+60E0",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 481,
-    "Shinji": "掲",
-    "Kyuji": "揭",
-    "Kyuji_Unicode": "U+63ED",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 482,
-    "Shinji": "渓",
-    "Kyuji": "溪",
-    "Kyuji_Unicode": "U+6EAA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 483,
-    "Shinji": "経",
-    "Kyuji": "經",
-    "Kyuji_Unicode": "U+7D93",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 484,
-    "Shinji": "蛍",
-    "Kyuji": "螢",
-    "Kyuji_Unicode": "U+87A2",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 487,
-    "Shinji": "軽",
-    "Kyuji": "輕",
-    "Kyuji_Unicode": "U+8F15",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 490,
-    "Shinji": "継",
-    "Kyuji": "繼",
-    "Kyuji_Unicode": "U+7E7C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 497,
-    "Shinji": "鶏",
-    "Kyuji": "鷄",
-    "Kyuji_Unicode": "U+9DC4",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 498,
-    "Shinji": "芸",
-    "Kyuji": "藝",
-    "Kyuji_Unicode": "U+85DD",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 503,
-    "Shinji": "撃",
-    "Kyuji": "擊",
-    "Kyuji_Unicode": "U+64CA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 506,
-    "Shinji": "欠",
-    "Kyuji": "缺",
-    "Kyuji_Unicode": "U+7F3A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 520,
-    "Shinji": "研",
-    "Kyuji": "硏",
-    "Kyuji_Unicode": "U+784F",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 521,
-    "Shinji": "県",
-    "Kyuji": "縣",
-    "Kyuji_Unicode": "U+7E23",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 522,
-    "Shinji": "倹",
-    "Kyuji": "儉",
-    "Kyuji_Unicode": "U+5109",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 524,
-    "Shinji": "剣",
-    "Kyuji": "劍",
-    "Kyuji_Unicode": "U+528D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 528,
-    "Shinji": "険",
-    "Kyuji": "險",
-    "Kyuji_Unicode": "U+96AA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 529,
-    "Shinji": "圏",
-    "Kyuji": "圈",
-    "Kyuji_Unicode": "U+5708",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 531,
-    "Shinji": "検",
-    "Kyuji": "檢",
-    "Kyuji_Unicode": "U+6AA2",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 533,
-    "Shinji": "献",
-    "Kyuji": "獻",
-    "Kyuji_Unicode": "U+737B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 536,
-    "Shinji": "権",
-    "Kyuji": "權",
-    "Kyuji_Unicode": "U+6B0A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 542,
-    "Shinji": "顕",
-    "Kyuji": "顯",
-    "Kyuji_Unicode": "U+986F",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 543,
-    "Shinji": "験",
-    "Kyuji": "驗",
-    "Kyuji_Unicode": "U+9A57",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 556,
-    "Shinji": "厳",
-    "Kyuji": "嚴",
-    "Kyuji_Unicode": "U+56B4",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 558,
-    "Shinji": "戸",
-    "Kyuji": "戶",
-    "Kyuji_Unicode": "U+6236",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 579,
-    "Shinji": "呉",
-    "Kyuji": "吳",
-    "Kyuji_Unicode": "U+5433",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 581,
-    "Shinji": "娯",
-    "Kyuji": "娛",
-    "Kyuji_Unicode": "U+5A1B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 594,
-    "Shinji": "広",
-    "Kyuji": "廣",
-    "Kyuji_Unicode": "U+5EE3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 609,
-    "Shinji": "効",
-    "Kyuji": "效",
-    "Kyuji_Unicode": "U+6548",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 615,
-    "Shinji": "恒",
-    "Kyuji": "恆",
-    "Kyuji_Unicode": "U+6046",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 632,
-    "Shinji": "黄",
-    "Kyuji": "黃",
-    "Kyuji_Unicode": "U+9EC3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 640,
-    "Shinji": "鉱",
-    "Kyuji": "鑛",
-    "Kyuji_Unicode": "U+945B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 651,
-    "Shinji": "号",
-    "Kyuji": "號",
-    "Kyuji_Unicode": "U+865F",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 658,
-    "Shinji": "告",
-    "Kyuji": "吿",
-    "Kyuji_Unicode": "U+543F",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 661,
-    "Shinji": "国",
-    "Kyuji": "國",
-    "Kyuji_Unicode": "U+570B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 662,
-    "Shinji": "黒",
-    "Kyuji": "黑",
-    "Kyuji_Unicode": "U+9ED1",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 663,
-    "Shinji": "穀",
-    "Kyuji": "穀",
-    "Kyuji_Unicode": "U+FA54",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 698,
-    "Shinji": "砕",
-    "Kyuji": "碎",
-    "Kyuji_Unicode": "U+788E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 703,
-    "Shinji": "済",
-    "Kyuji": "濟",
-    "Kyuji_Unicode": "U+6FDF",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 705,
-    "Shinji": "斎",
-    "Kyuji": "齋",
-    "Kyuji_Unicode": "U+9F4B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 719,
-    "Shinji": "剤",
-    "Kyuji": "劑",
-    "Kyuji_Unicode": "U+5291",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 738,
-    "Shinji": "殺",
-    "Kyuji": "殺",
-    "Kyuji_Unicode": "U+F970",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 742,
-    "Shinji": "雑",
-    "Kyuji": "雜",
-    "Kyuji_Unicode": "U+96DC",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 746,
-    "Shinji": "参",
-    "Kyuji": "參",
-    "Kyuji_Unicode": "U+53C3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 747,
-    "Shinji": "桟",
-    "Kyuji": "棧",
-    "Kyuji_Unicode": "U+68E7",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 748,
-    "Shinji": "蚕",
-    "Kyuji": "蠶",
-    "Kyuji_Unicode": "U+8836",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 749,
-    "Shinji": "惨",
-    "Kyuji": "慘",
-    "Kyuji_Unicode": "U+6158",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 750,
-    "Shinji": "産",
-    "Kyuji": "產",
-    "Kyuji_Unicode": "U+7522",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 755,
-    "Shinji": "賛",
-    "Kyuji": "贊",
-    "Kyuji_Unicode": "U+8D0A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 756,
-    "Shinji": "残",
-    "Kyuji": "殘",
-    "Kyuji_Unicode": "U+6B98",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 772,
-    "Shinji": "糸",
-    "Kyuji": "絲",
-    "Kyuji_Unicode": "U+7D72",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 782,
-    "Shinji": "祉",
-    "Kyuji": "祉",
-    "Kyuji_Unicode": "U+FA4D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 792,
-    "Shinji": "視",
-    "Kyuji": "視",
-    "Kyuji_Unicode": "U+FA61",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 795,
-    "Shinji": "歯",
-    "Kyuji": "齒",
-    "Kyuji_Unicode": "U+9F52",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 800,
-    "Shinji": "飼",
-    "Kyuji": "飼",
-    "Kyuji_Unicode": "U+FA2B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 813,
-    "Shinji": "児",
-    "Kyuji": "兒",
-    "Kyuji_Unicode": "U+5152",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 821,
-    "Shinji": "辞",
-    "Kyuji": "辭",
-    "Kyuji_Unicode": "U+8FAD",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 835,
-    "Shinji": "湿",
-    "Kyuji": "濕",
-    "Kyuji_Unicode": "U+6FD5",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 839,
-    "Shinji": "実",
-    "Kyuji": "實",
-    "Kyuji_Unicode": "U+5BE6",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 841,
-    "Shinji": "写",
-    "Kyuji": "寫",
-    "Kyuji_Unicode": "U+5BEB",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 842,
-    "Shinji": "社",
-    "Kyuji": "社",
-    "Kyuji_Unicode": "U+FA4C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 844,
-    "Shinji": "舎",
-    "Kyuji": "舍",
-    "Kyuji_Unicode": "U+820D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 845,
-    "Shinji": "者",
-    "Kyuji": "者",
-    "Kyuji_Unicode": "U+FA5B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 850,
-    "Shinji": "煮",
-    "Kyuji": "煮",
-    "Kyuji_Unicode": "U+FA48",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 858,
-    "Shinji": "釈",
-    "Kyuji": "釋",
-    "Kyuji_Unicode": "U+91CB",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 876,
-    "Shinji": "寿",
-    "Kyuji": "壽",
-    "Kyuji_Unicode": "U+58FD",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 883,
-    "Shinji": "収",
-    "Kyuji": "收",
-    "Kyuji_Unicode": "U+6536",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 892,
-    "Shinji": "臭",
-    "Kyuji": "臭",
-    "Kyuji_Unicode": "U+FA5C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 913,
-    "Shinji": "従",
-    "Kyuji": "從",
-    "Kyuji_Unicode": "U+5F9E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 914,
-    "Shinji": "渋",
-    "Kyuji": "澁",
-    "Kyuji_Unicode": "U+6F81",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 916,
-    "Shinji": "獣",
-    "Kyuji": "獸",
-    "Kyuji_Unicode": "U+7378",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 917,
-    "Shinji": "縦",
-    "Kyuji": "縱",
-    "Kyuji_Unicode": "U+7E31",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 919,
-    "Shinji": "祝",
-    "Kyuji": "祝",
-    "Kyuji_Unicode": "U+FA51",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 922,
-    "Shinji": "粛",
-    "Kyuji": "肅",
-    "Kyuji_Unicode": "U+8085",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 943,
-    "Shinji": "処",
-    "Kyuji": "處",
-    "Kyuji_Unicode": "U+8655",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 948,
-    "Shinji": "暑",
-    "Kyuji": "暑",
-    "Kyuji_Unicode": "U+FA43",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 949,
-    "Shinji": "署",
-    "Kyuji": "署",
-    "Kyuji_Unicode": "U+FA5A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 950,
-    "Shinji": "緒",
-    "Kyuji": "緖",
-    "Kyuji_Unicode": "U+7DD6",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 951,
-    "Shinji": "諸",
-    "Kyuji": "諸",
-    "Kyuji_Unicode": "U+FA22",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 956,
-    "Shinji": "叙",
-    "Kyuji": "敍",
-    "Kyuji_Unicode": "U+654D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 967,
-    "Shinji": "尚",
-    "Kyuji": "尙",
-    "Kyuji_Unicode": "U+5C19",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 975,
-    "Shinji": "将",
-    "Kyuji": "將",
-    "Kyuji_Unicode": "U+5C07",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 978,
-    "Shinji": "祥",
-    "Kyuji": "祥",
-    "Kyuji_Unicode": "U+FA1A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 979,
-    "Shinji": "称",
-    "Kyuji": "稱",
-    "Kyuji_Unicode": "U+7A31",
-    "Kyuji_Unicode_with_IVS": "U+7A31 U+E0101",
-    "CID": "CID+7846"
-  },
-  {
-    "ID": 983,
-    "Shinji": "渉",
-    "Kyuji": "涉",
-    "Kyuji_Unicode": "U+6D89",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 990,
-    "Shinji": "焼",
-    "Kyuji": "燒",
-    "Kyuji_Unicode": "U+71D2",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 995,
-    "Shinji": "証",
-    "Kyuji": "證",
-    "Kyuji_Unicode": "U+8B49",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 998,
-    "Shinji": "奨",
-    "Kyuji": "奬",
-    "Kyuji_Unicode": "U+596C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1012,
-    "Shinji": "条",
-    "Kyuji": "條",
-    "Kyuji_Unicode": "U+689D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1013,
-    "Shinji": "状",
-    "Kyuji": "狀",
-    "Kyuji_Unicode": "U+72C0",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1014,
-    "Shinji": "乗",
-    "Kyuji": "乘",
-    "Kyuji_Unicode": "U+4E58",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1016,
-    "Shinji": "浄",
-    "Kyuji": "淨",
-    "Kyuji_Unicode": "U+6DE8",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1017,
-    "Shinji": "剰",
-    "Kyuji": "剩",
-    "Kyuji_Unicode": "U+5269",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1021,
-    "Shinji": "畳",
-    "Kyuji": "疊",
-    "Kyuji_Unicode": "U+758A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1023,
-    "Shinji": "縄",
-    "Kyuji": "繩",
-    "Kyuji_Unicode": "U+7E69",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1024,
-    "Shinji": "壌",
-    "Kyuji": "壤",
-    "Kyuji_Unicode": "U+58E4",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1025,
-    "Shinji": "嬢",
-    "Kyuji": "孃",
-    "Kyuji_Unicode": "U+5B43",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1027,
-    "Shinji": "譲",
-    "Kyuji": "讓",
-    "Kyuji_Unicode": "U+8B93",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1028,
-    "Shinji": "醸",
-    "Kyuji": "釀",
-    "Kyuji_Unicode": "U+91C0",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1035,
-    "Shinji": "触",
-    "Kyuji": "觸",
-    "Kyuji_Unicode": "U+89F8",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1036,
-    "Shinji": "嘱",
-    "Kyuji": "囑",
-    "Kyuji_Unicode": "U+56D1",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1051,
-    "Shinji": "神",
-    "Kyuji": "神",
-    "Kyuji_Unicode": "U+FA19",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1056,
-    "Shinji": "真",
-    "Kyuji": "眞",
-    "Kyuji_Unicode": "U+771E",
-    "Kyuji_Unicode_with_IVS": "U+771E U+E0100",
-    "CID": "CID+13357"
-  },
-  {
-    "ID": 1063,
-    "Shinji": "寝",
-    "Kyuji": "寢",
-    "Kyuji_Unicode": "U+5BE2",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1064,
-    "Shinji": "慎",
-    "Kyuji": "愼",
-    "Kyuji_Unicode": "U+613C",
-    "Kyuji_Unicode_with_IVS": "U+614E U+E0100",
-    "CID": "CID+13356"
-  },
-  {
-    "ID": 1073,
-    "Shinji": "尽",
-    "Kyuji": "盡",
-    "Kyuji_Unicode": "U+76E1",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1080,
-    "Shinji": "図",
-    "Kyuji": "圖",
-    "Kyuji_Unicode": "U+5716",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1086,
-    "Shinji": "粋",
-    "Kyuji": "粹",
-    "Kyuji_Unicode": "U+7CB9",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1089,
-    "Shinji": "酔",
-    "Kyuji": "醉",
-    "Kyuji_Unicode": "U+9189",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1092,
-    "Shinji": "穂",
-    "Kyuji": "穗",
-    "Kyuji_Unicode": "U+7A57",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1093,
-    "Shinji": "随",
-    "Kyuji": "隨",
-    "Kyuji_Unicode": "U+96A8",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1094,
-    "Shinji": "髄",
-    "Kyuji": "髓",
-    "Kyuji_Unicode": "U+9AD3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1095,
-    "Shinji": "枢",
-    "Kyuji": "樞",
-    "Kyuji_Unicode": "U+6A1E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1097,
-    "Shinji": "数",
-    "Kyuji": "數",
-    "Kyuji_Unicode": "U+6578",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1102,
-    "Shinji": "瀬",
-    "Kyuji": "瀨",
-    "Kyuji_Unicode": "U+7028",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1110,
-    "Shinji": "声",
-    "Kyuji": "聲",
-    "Kyuji_Unicode": "U+8072",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1116,
-    "Shinji": "斉",
-    "Kyuji": "齊",
-    "Kyuji_Unicode": "U+9F4A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1126,
-    "Shinji": "晴",
-    "Kyuji": "晴",
-    "Kyuji_Unicode": "U+FA12",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1130,
-    "Shinji": "精",
-    "Kyuji": "精",
-    "Kyuji_Unicode": "U+FA1D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1133,
-    "Shinji": "静",
-    "Kyuji": "靜",
-    "Kyuji_Unicode": "U+975C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1137,
-    "Shinji": "税",
-    "Kyuji": "稅",
-    "Kyuji_Unicode": "U+7A05",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1157,
-    "Shinji": "窃",
-    "Kyuji": "竊",
-    "Kyuji_Unicode": "U+7ACA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1161,
-    "Shinji": "摂",
-    "Kyuji": "攝",
-    "Kyuji_Unicode": "U+651D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1162,
-    "Shinji": "節",
-    "Kyuji": "節",
-    "Kyuji_Unicode": "U+FA56",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1163,
-    "Shinji": "説",
-    "Kyuji": "說",
-    "Kyuji_Unicode": "U+8AAA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1165,
-    "Shinji": "絶",
-    "Kyuji": "絕",
-    "Kyuji_Unicode": "U+7D55",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1172,
-    "Shinji": "専",
-    "Kyuji": "專",
-    "Kyuji_Unicode": "U+5C08",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1174,
-    "Shinji": "浅",
-    "Kyuji": "淺",
-    "Kyuji_Unicode": "U+6DFA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1181,
-    "Shinji": "戦",
-    "Kyuji": "戰",
-    "Kyuji_Unicode": "U+6230",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1186,
-    "Shinji": "践",
-    "Kyuji": "踐",
-    "Kyuji_Unicode": "U+8E10",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1188,
-    "Shinji": "銭",
-    "Kyuji": "錢",
-    "Kyuji_Unicode": "U+9322",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1189,
-    "Shinji": "潜",
-    "Kyuji": "潛",
-    "Kyuji_Unicode": "U+6F5B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1194,
-    "Shinji": "繊",
-    "Kyuji": "纖",
-    "Kyuji_Unicode": "U+7E96",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1200,
-    "Shinji": "禅",
-    "Kyuji": "禪",
-    "Kyuji_Unicode": "U+79AA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1206,
-    "Shinji": "祖",
-    "Kyuji": "祖",
-    "Kyuji_Unicode": "U+FA50",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1217,
-    "Shinji": "双",
-    "Kyuji": "雙",
-    "Kyuji_Unicode": "U+96D9",
-    "Kyuji_Unicode_with_IVS": "U+96D9 U+E0101",
-    "CID": "CID+13525"
-  },
-  {
-    "ID": 1218,
-    "Shinji": "壮",
-    "Kyuji": "壯",
-    "Kyuji_Unicode": "U+58EF",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1220,
-    "Shinji": "争",
-    "Kyuji": "爭",
-    "Kyuji_Unicode": "U+722D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1224,
-    "Shinji": "荘",
-    "Kyuji": "莊",
-    "Kyuji_Unicode": "U+838A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1228,
-    "Shinji": "捜",
-    "Kyuji": "搜",
-    "Kyuji_Unicode": "U+641C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1229,
-    "Shinji": "挿",
-    "Kyuji": "插",
-    "Kyuji_Unicode": "U+63D2",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1231,
-    "Shinji": "巣",
-    "Kyuji": "巢",
-    "Kyuji_Unicode": "U+5DE2",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1234,
-    "Shinji": "曽",
-    "Kyuji": "曾",
-    "Kyuji_Unicode": "U+66FE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1239,
-    "Shinji": "痩",
-    "Kyuji": "瘦",
-    "Kyuji_Unicode": "U+7626",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1241,
-    "Shinji": "装",
-    "Kyuji": "裝",
-    "Kyuji_Unicode": "U+88DD",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1242,
-    "Shinji": "僧",
-    "Kyuji": "僧",
-    "Kyuji_Unicode": "U+FA31",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1244,
-    "Shinji": "層",
-    "Kyuji": "層",
-    "Kyuji_Unicode": "U+FA3B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1245,
-    "Shinji": "総",
-    "Kyuji": "總",
-    "Kyuji_Unicode": "U+7E3D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1252,
-    "Shinji": "騒",
-    "Kyuji": "騷",
-    "Kyuji_Unicode": "U+9A37",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1256,
-    "Shinji": "増",
-    "Kyuji": "增",
-    "Kyuji_Unicode": "U+589E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1257,
-    "Shinji": "憎",
-    "Kyuji": "憎",
-    "Kyuji_Unicode": "U+FA3F",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1258,
-    "Shinji": "蔵",
-    "Kyuji": "藏",
-    "Kyuji_Unicode": "U+85CF",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1259,
-    "Shinji": "贈",
-    "Kyuji": "贈",
-    "Kyuji_Unicode": "U+FA65",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1260,
-    "Shinji": "臓",
-    "Kyuji": "臟",
-    "Kyuji_Unicode": "U+81DF",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1261,
-    "Shinji": "即",
-    "Kyuji": "卽",
-    "Kyuji_Unicode": "U+537D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1273,
-    "Shinji": "属",
-    "Kyuji": "屬",
-    "Kyuji_Unicode": "U+5C6C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1275,
-    "Shinji": "続",
-    "Kyuji": "續",
-    "Kyuji_Unicode": "U+7E8C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1290,
-    "Shinji": "堕",
-    "Kyuji": "墮",
-    "Kyuji_Unicode": "U+58AE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1294,
-    "Shinji": "対",
-    "Kyuji": "對",
-    "Kyuji_Unicode": "U+5C0D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1295,
-    "Shinji": "体",
-    "Kyuji": "體",
-    "Kyuji_Unicode": "U+9AD4",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1301,
-    "Shinji": "帯",
-    "Kyuji": "帶",
-    "Kyuji_Unicode": "U+5E36",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1309,
-    "Shinji": "滞",
-    "Kyuji": "滯",
-    "Kyuji_Unicode": "U+6EEF",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1314,
-    "Shinji": "台",
-    "Kyuji": "臺",
-    "Kyuji_Unicode": "U+81FA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1317,
-    "Shinji": "滝",
-    "Kyuji": "瀧",
-    "Kyuji_Unicode": "U+7027",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1319,
-    "Shinji": "択",
-    "Kyuji": "擇",
-    "Kyuji_Unicode": "U+64C7",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1320,
-    "Shinji": "沢",
-    "Kyuji": "澤",
-    "Kyuji_Unicode": "U+6FA4",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1329,
-    "Shinji": "脱",
-    "Kyuji": "脫",
-    "Kyuji_Unicode": "U+812B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1335,
-    "Shinji": "担",
-    "Kyuji": "擔",
-    "Kyuji_Unicode": "U+64D4",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1336,
-    "Shinji": "単",
-    "Kyuji": "單",
-    "Kyuji_Unicode": "U+55AE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1338,
-    "Shinji": "胆",
-    "Kyuji": "膽",
-    "Kyuji_Unicode": "U+81BD",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1342,
-    "Shinji": "嘆",
-    "Kyuji": "嘆",
-    "Kyuji_Unicode": "U+FA37",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1347,
-    "Shinji": "団",
-    "Kyuji": "團",
-    "Kyuji_Unicode": "U+5718",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1350,
-    "Shinji": "断",
-    "Kyuji": "斷",
-    "Kyuji_Unicode": "U+65B7",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1351,
-    "Shinji": "弾",
-    "Kyuji": "彈",
-    "Kyuji_Unicode": "U+5F48",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1361,
-    "Shinji": "遅",
-    "Kyuji": "遲",
-    "Kyuji_Unicode": "U+9072",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1362,
-    "Shinji": "痴",
-    "Kyuji": "癡",
-    "Kyuji_Unicode": "U+7661",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1378,
-    "Shinji": "虫",
-    "Kyuji": "蟲",
-    "Kyuji_Unicode": "U+87F2",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1384,
-    "Shinji": "昼",
-    "Kyuji": "晝",
-    "Kyuji_Unicode": "U+665D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1388,
-    "Shinji": "鋳",
-    "Kyuji": "鑄",
-    "Kyuji_Unicode": "U+9444",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1390,
-    "Shinji": "著",
-    "Kyuji": "著",
-    "Kyuji_Unicode": "U+FA5F",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1394,
-    "Shinji": "庁",
-    "Kyuji": "廳",
-    "Kyuji_Unicode": "U+5EF3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1411,
-    "Shinji": "徴",
-    "Kyuji": "徵",
-    "Kyuji_Unicode": "U+5FB5",
-    "Kyuji_Unicode_with_IVS": "U+5FB5 U+E0101",
-    "CID": "CID+13929"
-  },
-  {
-    "ID": 1416,
-    "Shinji": "聴",
-    "Kyuji": "聽",
-    "Kyuji_Unicode": "U+807D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1417,
-    "Shinji": "懲",
-    "Kyuji": "懲",
-    "Kyuji_Unicode": "U+FA40",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1419,
-    "Shinji": "勅",
-    "Kyuji": "敕",
-    "Kyuji_Unicode": "U+6555",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1432,
-    "Shinji": "塚",
-    "Kyuji": "塚",
-    "Kyuji_Unicode": "U+FA10",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1450,
-    "Shinji": "逓",
-    "Kyuji": "遞",
-    "Kyuji_Unicode": "U+905E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1469,
-    "Shinji": "鉄",
-    "Kyuji": "鐵",
-    "Kyuji_Unicode": "U+9435",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1475,
-    "Shinji": "点",
-    "Kyuji": "點",
-    "Kyuji_Unicode": "U+9EDE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1478,
-    "Shinji": "転",
-    "Kyuji": "轉",
-    "Kyuji_Unicode": "U+8F49",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1481,
-    "Shinji": "伝",
-    "Kyuji": "傳",
-    "Kyuji_Unicode": "U+50B3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1489,
-    "Shinji": "都",
-    "Kyuji": "都",
-    "Kyuji_Unicode": "U+FA26",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1500,
-    "Shinji": "灯",
-    "Kyuji": "燈",
-    "Kyuji_Unicode": "U+71C8",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1501,
-    "Shinji": "当",
-    "Kyuji": "當",
-    "Kyuji_Unicode": "U+7576",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1514,
-    "Shinji": "党",
-    "Kyuji": "黨",
-    "Kyuji_Unicode": "U+9EE8",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1516,
-    "Shinji": "盗",
-    "Kyuji": "盜",
-    "Kyuji_Unicode": "U+76DC",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1528,
-    "Shinji": "稲",
-    "Kyuji": "稻",
-    "Kyuji_Unicode": "U+7A3B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1534,
-    "Shinji": "闘",
-    "Kyuji": "鬪",
-    "Kyuji_Unicode": "U+9B2A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1552,
-    "Shinji": "徳",
-    "Kyuji": "德",
-    "Kyuji_Unicode": "U+5FB7",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1555,
-    "Shinji": "独",
-    "Kyuji": "獨",
-    "Kyuji_Unicode": "U+7368",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1556,
-    "Shinji": "読",
-    "Kyuji": "讀",
-    "Kyuji_Unicode": "U+8B80",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1559,
-    "Shinji": "突",
-    "Kyuji": "突",
-    "Kyuji_Unicode": "U+FA55",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1560,
-    "Shinji": "届",
-    "Kyuji": "屆",
-    "Kyuji_Unicode": "U+5C46",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1576,
-    "Shinji": "難",
-    "Kyuji": "難",
-    "Kyuji_Unicode": "U+FA68",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1579,
-    "Shinji": "弐",
-    "Kyuji": "貳",
-    "Kyuji_Unicode": "U+8CB3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1598,
-    "Shinji": "悩",
-    "Kyuji": "惱",
-    "Kyuji_Unicode": "U+60F1",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1601,
-    "Shinji": "脳",
-    "Kyuji": "腦",
-    "Kyuji_Unicode": "U+8166",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1608,
-    "Shinji": "覇",
-    "Kyuji": "霸",
-    "Kyuji_Unicode": "U+9738",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1612,
-    "Shinji": "拝",
-    "Kyuji": "拜",
-    "Kyuji_Unicode": "U+62DC",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1620,
-    "Shinji": "廃",
-    "Kyuji": "廢",
-    "Kyuji_Unicode": "U+5EE2",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1622,
-    "Shinji": "売",
-    "Kyuji": "賣",
-    "Kyuji_Unicode": "U+8CE3",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1624,
-    "Shinji": "梅",
-    "Kyuji": "梅",
-    "Kyuji_Unicode": "U+FA44",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1639,
-    "Shinji": "麦",
-    "Kyuji": "麥",
-    "Kyuji_Unicode": "U+9EA5",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1649,
-    "Shinji": "発",
-    "Kyuji": "發",
-    "Kyuji_Unicode": "U+767C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1650,
-    "Shinji": "髪",
-    "Kyuji": "髮",
-    "Kyuji_Unicode": "U+9AEE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1652,
-    "Shinji": "抜",
-    "Kyuji": "拔",
-    "Kyuji_Unicode": "U+62D4",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1672,
-    "Shinji": "飯",
-    "Kyuji": "飯",
-    "Kyuji_Unicode": "U+FA2A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1677,
-    "Shinji": "繁",
-    "Kyuji": "繁",
-    "Kyuji_Unicode": "U+FA59",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1679,
-    "Shinji": "晩",
-    "Kyuji": "晚",
-    "Kyuji_Unicode": "U+665A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1681,
-    "Shinji": "蛮",
-    "Kyuji": "蠻",
-    "Kyuji_Unicode": "U+883B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1692,
-    "Shinji": "卑",
-    "Kyuji": "卑",
-    "Kyuji_Unicode": "U+FA35",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1695,
-    "Shinji": "秘",
-    "Kyuji": "祕",
-    "Kyuji_Unicode": "U+7955",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1700,
-    "Shinji": "碑",
-    "Kyuji": "碑",
-    "Kyuji_Unicode": "U+FA4B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1715,
-    "Shinji": "姫",
-    "Kyuji": "姬",
-    "Kyuji_Unicode": "U+59EC",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1730,
-    "Shinji": "浜",
-    "Kyuji": "濱",
-    "Kyuji_Unicode": "U+6FF1",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1732,
-    "Shinji": "賓",
-    "Kyuji": "賓",
-    "Kyuji_Unicode": "U+FA64",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1733,
-    "Shinji": "頻",
-    "Kyuji": "頻",
-    "Kyuji_Unicode": "U+FA6A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1734,
-    "Shinji": "敏",
-    "Kyuji": "敏",
-    "Kyuji_Unicode": "U+FA41",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1735,
-    "Shinji": "瓶",
-    "Kyuji": "甁",
-    "Kyuji_Unicode": "U+7501",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1759,
-    "Shinji": "侮",
-    "Kyuji": "侮",
-    "Kyuji_Unicode": "U+FA30",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1770,
-    "Shinji": "福",
-    "Kyuji": "福",
-    "Kyuji_Unicode": "U+FA1B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1774,
-    "Shinji": "払",
-    "Kyuji": "拂",
-    "Kyuji_Unicode": "U+62C2",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1776,
-    "Shinji": "仏",
-    "Kyuji": "佛",
-    "Kyuji_Unicode": "U+4F5B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1791,
-    "Shinji": "併",
-    "Kyuji": "倂",
-    "Kyuji_Unicode": "U+5002",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1792,
-    "Shinji": "並",
-    "Kyuji": "竝",
-    "Kyuji_Unicode": "U+7ADD",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1796,
-    "Shinji": "塀",
-    "Kyuji": "塀",
-    "Kyuji_Unicode": "U+FA39",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1800,
-    "Shinji": "餅",
-    "Kyuji": "餠",
-    "Kyuji_Unicode": "U+9920",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1808,
-    "Shinji": "辺",
-    "Kyuji": "邊",
-    "Kyuji_Unicode": "U+908A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1810,
-    "Shinji": "変",
-    "Kyuji": "變",
-    "Kyuji_Unicode": "U+8B8A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1814,
-    "Shinji": "弁",
-    "Kyuji": "辨瓣辯",
-    "Kyuji_Unicode": "U+8FA8 U+74E3 U+8FAF",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1816,
-    "Shinji": "勉",
-    "Kyuji": "勉",
-    "Kyuji_Unicode": "U+FA33",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1817,
-    "Shinji": "歩",
-    "Kyuji": "步",
-    "Kyuji_Unicode": "U+6B65",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1834,
-    "Shinji": "宝",
-    "Kyuji": "寶",
-    "Kyuji_Unicode": "U+5BF6",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1848,
-    "Shinji": "豊",
-    "Kyuji": "豐",
-    "Kyuji_Unicode": "U+8C50",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1850,
-    "Shinji": "褒",
-    "Kyuji": "襃",
-    "Kyuji_Unicode": "U+8943",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1881,
-    "Shinji": "墨",
-    "Kyuji": "墨",
-    "Kyuji_Unicode": "U+FA3A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1888,
-    "Shinji": "翻",
-    "Kyuji": "飜",
-    "Kyuji_Unicode": "U+98DC",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1895,
-    "Shinji": "毎",
-    "Kyuji": "每",
-    "Kyuji_Unicode": "U+6BCF",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1906,
-    "Shinji": "万",
-    "Kyuji": "萬",
-    "Kyuji_Unicode": "U+842C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1907,
-    "Shinji": "満",
-    "Kyuji": "滿",
-    "Kyuji_Unicode": "U+6EFF",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1935,
-    "Shinji": "免",
-    "Kyuji": "免",
-    "Kyuji_Unicode": "U+FA32",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1938,
-    "Shinji": "麺",
-    "Kyuji": "麵",
-    "Kyuji_Unicode": "U+9EB5",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1948,
-    "Shinji": "黙",
-    "Kyuji": "默",
-    "Kyuji_Unicode": "U+9ED8",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1955,
-    "Shinji": "弥",
-    "Kyuji": "彌",
-    "Kyuji_Unicode": "U+5F4C",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1959,
-    "Shinji": "訳",
-    "Kyuji": "譯",
-    "Kyuji_Unicode": "U+8B6F",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1960,
-    "Shinji": "薬",
-    "Kyuji": "藥",
-    "Kyuji_Unicode": "U+85E5",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1986,
-    "Shinji": "与",
-    "Kyuji": "與",
-    "Kyuji_Unicode": "U+8207",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1987,
-    "Shinji": "予",
-    "Kyuji": "豫",
-    "Kyuji_Unicode": "U+8C6B",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1988,
-    "Shinji": "余",
-    "Kyuji": "餘",
-    "Kyuji_Unicode": "U+9918",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 1989,
-    "Shinji": "誉",
-    "Kyuji": "譽",
-    "Kyuji_Unicode": "U+8B7D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2000,
-    "Shinji": "揺",
-    "Kyuji": "搖",
-    "Kyuji_Unicode": "U+6416",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2005,
-    "Shinji": "様",
-    "Kyuji": "樣",
-    "Kyuji_Unicode": "U+6A23",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2011,
-    "Shinji": "謡",
-    "Kyuji": "謠",
-    "Kyuji_Unicode": "U+8B20",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2022,
-    "Shinji": "来",
-    "Kyuji": "來",
-    "Kyuji_Unicode": "U+4F86",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2024,
-    "Shinji": "頼",
-    "Kyuji": "賴",
-    "Kyuji_Unicode": "U+8CF4",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2029,
-    "Shinji": "乱",
-    "Kyuji": "亂",
-    "Kyuji_Unicode": "U+4E82",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2031,
-    "Shinji": "覧",
-    "Kyuji": "覽",
-    "Kyuji_Unicode": "U+89BD",
-    "Kyuji_Unicode_with_IVS": "U+89BD U+E0101",
-    "CID": "CID+14218"
-  },
-  {
-    "ID": 2034,
-    "Shinji": "欄",
-    "Kyuji": "欄",
-    "Kyuji_Unicode": "U+F91D",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2052,
-    "Shinji": "竜",
-    "Kyuji": "龍",
-    "Kyuji_Unicode": "U+9F8D",
-    "Kyuji_Unicode_with_IVS": "U+9F8D U+E0102",
-    "CID": "CID+14087"
-  },
-  {
-    "ID": 2054,
-    "Shinji": "隆",
-    "Kyuji": "隆",
-    "Kyuji_Unicode": "U+F9DC",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2058,
-    "Shinji": "虜",
-    "Kyuji": "虜",
-    "Kyuji_Unicode": "U+F936",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2061,
-    "Shinji": "両",
-    "Kyuji": "兩",
-    "Kyuji_Unicode": "U+5169",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2065,
-    "Shinji": "猟",
-    "Kyuji": "獵",
-    "Kyuji_Unicode": "U+7375",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2075,
-    "Shinji": "緑",
-    "Kyuji": "綠",
-    "Kyuji_Unicode": "U+7DA0",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2083,
-    "Shinji": "涙",
-    "Kyuji": "淚",
-    "Kyuji_Unicode": "U+6DDA",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2085,
-    "Shinji": "塁",
-    "Kyuji": "壘",
-    "Kyuji_Unicode": "U+58D8",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2086,
-    "Shinji": "類",
-    "Kyuji": "類",
-    "Kyuji_Unicode": "U+F9D0",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2088,
-    "Shinji": "礼",
-    "Kyuji": "禮",
-    "Kyuji_Unicode": "U+79AE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2090,
-    "Shinji": "励",
-    "Kyuji": "勵",
-    "Kyuji_Unicode": "U+52F5",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2091,
-    "Shinji": "戻",
-    "Kyuji": "戾",
-    "Kyuji_Unicode": "U+623E",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2095,
-    "Shinji": "霊",
-    "Kyuji": "靈",
-    "Kyuji_Unicode": "U+9748",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2097,
-    "Shinji": "齢",
-    "Kyuji": "齡",
-    "Kyuji_Unicode": "U+9F61",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2099,
-    "Shinji": "暦",
-    "Kyuji": "曆",
-    "Kyuji_Unicode": "U+66C6",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2100,
-    "Shinji": "歴",
-    "Kyuji": "歷",
-    "Kyuji_Unicode": "U+6B77",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2105,
-    "Shinji": "恋",
-    "Kyuji": "戀",
-    "Kyuji_Unicode": "U+6200",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2108,
-    "Shinji": "練",
-    "Kyuji": "練",
-    "Kyuji_Unicode": "U+FA57",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2109,
-    "Shinji": "錬",
-    "Kyuji": "鍊",
-    "Kyuji_Unicode": "U+934A",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2111,
-    "Shinji": "炉",
-    "Kyuji": "爐",
-    "Kyuji_Unicode": "U+7210",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2116,
-    "Shinji": "労",
-    "Kyuji": "勞",
-    "Kyuji_Unicode": "U+52DE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2118,
-    "Shinji": "郎",
-    "Kyuji": "郞",
-    "Kyuji_Unicode": "U+90DE",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2119,
-    "Shinji": "朗",
-    "Kyuji": "朗",
-    "Kyuji_Unicode": "U+F929",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2121,
-    "Shinji": "廊",
-    "Kyuji": "廊",
-    "Kyuji_Unicode": "U+F928",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2122,
-    "Shinji": "楼",
-    "Kyuji": "樓",
-    "Kyuji_Unicode": "U+6A13",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2126,
-    "Shinji": "録",
-    "Kyuji": "錄",
-    "Kyuji_Unicode": "U+9304",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  },
-  {
-    "ID": 2135,
-    "Shinji": "湾",
-    "Kyuji": "灣",
-    "Kyuji_Unicode": "U+7063",
-    "Kyuji_Unicode_with_IVS": "",
-    "CID": ""
-  }
-]
+{
+  "亜": { "kyuji": "亞", "unicode": "U+4E9E" },
+  "悪": { "kyuji": "惡", "unicode": "U+60E1" },
+  "圧": { "kyuji": "壓", "unicode": "U+58D3" },
+  "囲": { "kyuji": "圍", "unicode": "U+570D" },
+  "医": { "kyuji": "醫", "unicode": "U+91AB" },
+  "為": { "kyuji": "爲", "unicode": "U+7232" },
+  "壱": { "kyuji": "壹", "unicode": "U+58F9" },
+  "逸": { "kyuji": "逸", "unicode": "U+FA67" },
+  "飲": { "kyuji": "飮", "unicode": "U+98EE" },
+  "隠": { "kyuji": "隱", "unicode": "U+96B1" },
+  "羽": { "kyuji": "羽", "unicode": "U+FA1E" },
+  "栄": { "kyuji": "榮", "unicode": "U+69AE" },
+  "営": { "kyuji": "營", "unicode": "U+71DF" },
+  "衛": { "kyuji": "衞", "unicode": "U+885E" },
+  "駅": { "kyuji": "驛", "unicode": "U+9A5B" },
+  "謁": { "kyuji": "謁", "unicode": "U+FA62" },
+  "円": { "kyuji": "圓", "unicode": "U+5713" },
+  "塩": { "kyuji": "鹽", "unicode": "U+9E7D" },
+  "縁": { "kyuji": "緣", "unicode": "U+7DE3" },
+  "艶": { "kyuji": "艷", "unicode": "U+8277" },
+  "応": { "kyuji": "應", "unicode": "U+61C9" },
+  "欧": { "kyuji": "歐", "unicode": "U+6B50" },
+  "殴": { "kyuji": "毆", "unicode": "U+6BC6" },
+  "桜": { "kyuji": "櫻", "unicode": "U+6AFB" },
+  "奥": { "kyuji": "奧", "unicode": "U+5967" },
+  "横": { "kyuji": "橫", "unicode": "U+6A6B" },
+  "温": { "kyuji": "溫", "unicode": "U+6EAB" },
+  "穏": { "kyuji": "穩", "unicode": "U+7A69" },
+  "仮": { "kyuji": "假", "unicode": "U+5047" },
+  "価": { "kyuji": "價", "unicode": "U+50F9" },
+  "禍": { "kyuji": "禍", "unicode": "U+FA52" },
+  "画": { "kyuji": "畫", "unicode": "U+756B" },
+  "会": { "kyuji": "會", "unicode": "U+6703" },
+  "悔": { "kyuji": "悔", "unicode": "U+FA3D" },
+  "海": { "kyuji": "海", "unicode": "U+FA45" },
+  "絵": { "kyuji": "繪", "unicode": "U+7E6A" },
+  "壊": { "kyuji": "壞", "unicode": "U+58DE" },
+  "懐": { "kyuji": "懷", "unicode": "U+61F7" },
+  "慨": { "kyuji": "慨", "unicode": "U+FA3E" },
+  "概": { "kyuji": "槪", "unicode": "U+69EA" },
+  "拡": { "kyuji": "擴", "unicode": "U+64F4" },
+  "殻": { "kyuji": "殼", "unicode": "U+6BBC" },
+  "覚": { "kyuji": "覺", "unicode": "U+89BA" },
+  "学": { "kyuji": "學", "unicode": "U+5B78" },
+  "岳": { "kyuji": "嶽", "unicode": "U+5DBD" },
+  "楽": { "kyuji": "樂", "unicode": "U+6A02" },
+  "喝": { "kyuji": "喝", "unicode": "U+FA36" },
+  "渇": { "kyuji": "渴", "unicode": "U+6E34" },
+  "褐": { "kyuji": "褐", "unicode": "U+FA60" },
+  "缶": { "kyuji": "罐", "unicode": "U+7F50" },
+  "巻": { "kyuji": "卷", "unicode": "U+5377" },
+  "陥": { "kyuji": "陷", "unicode": "U+9677" },
+  "勧": { "kyuji": "勸", "unicode": "U+52F8" },
+  "寛": { "kyuji": "寬", "unicode": "U+5BEC" },
+  "漢": { "kyuji": "漢", "unicode": "U+FA47" },
+  "関": { "kyuji": "關", "unicode": "U+95DC" },
+  "歓": { "kyuji": "歡", "unicode": "U+6B61" },
+  "館": { "kyuji": "館", "unicode": "U+FA2C" },
+  "観": { "kyuji": "觀", "unicode": "U+89C0" },
+  "顔": { "kyuji": "顏", "unicode": "U+984F" },
+  "気": { "kyuji": "氣", "unicode": "U+6C23" },
+  "祈": { "kyuji": "祈", "unicode": "U+FA4E" },
+  "既": { "kyuji": "既", "unicode": "U+FA42" },
+  "帰": { "kyuji": "歸", "unicode": "U+6B78" },
+  "亀": { "kyuji": "龜", "unicode": "U+9F9C" },
+  "器": { "kyuji": "器", "unicode": "U+FA38" },
+  "偽": { "kyuji": "僞", "unicode": "U+50DE" },
+  "戯": { "kyuji": "戲", "unicode": "U+6232" },
+  "犠": { "kyuji": "犧", "unicode": "U+72A7" },
+  "旧": { "kyuji": "舊", "unicode": "U+820A" },
+  "拠": { "kyuji": "據", "unicode": "U+64DA" },
+  "挙": { "kyuji": "擧", "unicode": "U+64E7" },
+  "虚": { "kyuji": "虛", "unicode": "U+865B" },
+  "峡": { "kyuji": "峽", "unicode": "U+5CFD" },
+  "挟": { "kyuji": "挾", "unicode": "U+633E" },
+  "狭": { "kyuji": "狹", "unicode": "U+72F9" },
+  "強": { "kyuji": "强", "unicode": "U+5F3A" },
+  "教": { "kyuji": "敎", "unicode": "U+654E" },
+  "郷": { "kyuji": "鄕", "unicode": "U+9115" },
+  "響": { "kyuji": "響", "unicode": "U+FA69" },
+  "暁": { "kyuji": "曉", "unicode": "U+66C9" },
+  "勤": { "kyuji": "勤", "unicode": "U+FA34" },
+  "謹": { "kyuji": "謹", "unicode": "U+FA63" },
+  "区": { "kyuji": "區", "unicode": "U+5340" },
+  "駆": { "kyuji": "驅", "unicode": "U+9A45" },
+  "勲": { "kyuji": "勳", "unicode": "U+52F3" },
+  "薫": { "kyuji": "薰", "unicode": "U+85B0" },
+  "径": { "kyuji": "徑", "unicode": "U+5F91" },
+  "茎": { "kyuji": "莖", "unicode": "U+8396" },
+  "恵": { "kyuji": "惠", "unicode": "U+60E0" },
+  "掲": { "kyuji": "揭", "unicode": "U+63ED" },
+  "渓": { "kyuji": "溪", "unicode": "U+6EAA" },
+  "経": { "kyuji": "經", "unicode": "U+7D93" },
+  "蛍": { "kyuji": "螢", "unicode": "U+87A2" },
+  "軽": { "kyuji": "輕", "unicode": "U+8F15" },
+  "継": { "kyuji": "繼", "unicode": "U+7E7C" },
+  "鶏": { "kyuji": "鷄", "unicode": "U+9DC4" },
+  "芸": { "kyuji": "藝", "unicode": "U+85DD" },
+  "撃": { "kyuji": "擊", "unicode": "U+64CA" },
+  "欠": { "kyuji": "缺", "unicode": "U+7F3A" },
+  "研": { "kyuji": "硏", "unicode": "U+784F" },
+  "県": { "kyuji": "縣", "unicode": "U+7E23" },
+  "倹": { "kyuji": "儉", "unicode": "U+5109" },
+  "剣": { "kyuji": "劍", "unicode": "U+528D" },
+  "険": { "kyuji": "險", "unicode": "U+96AA" },
+  "圏": { "kyuji": "圈", "unicode": "U+5708" },
+  "検": { "kyuji": "檢", "unicode": "U+6AA2" },
+  "献": { "kyuji": "獻", "unicode": "U+737B" },
+  "権": { "kyuji": "權", "unicode": "U+6B0A" },
+  "顕": { "kyuji": "顯", "unicode": "U+986F" },
+  "験": { "kyuji": "驗", "unicode": "U+9A57" },
+  "厳": { "kyuji": "嚴", "unicode": "U+56B4" },
+  "戸": { "kyuji": "戶", "unicode": "U+6236" },
+  "呉": { "kyuji": "吳", "unicode": "U+5433" },
+  "娯": { "kyuji": "娛", "unicode": "U+5A1B" },
+  "広": { "kyuji": "廣", "unicode": "U+5EE3" },
+  "効": { "kyuji": "效", "unicode": "U+6548" },
+  "恒": { "kyuji": "恆", "unicode": "U+6046" },
+  "黄": { "kyuji": "黃", "unicode": "U+9EC3" },
+  "鉱": { "kyuji": "鑛", "unicode": "U+945B" },
+  "号": { "kyuji": "號", "unicode": "U+865F" },
+  "告": { "kyuji": "吿", "unicode": "U+543F" },
+  "国": { "kyuji": "國", "unicode": "U+570B" },
+  "黒": { "kyuji": "黑", "unicode": "U+9ED1" },
+  "穀": { "kyuji": "穀", "unicode": "U+FA54" },
+  "砕": { "kyuji": "碎", "unicode": "U+788E" },
+  "済": { "kyuji": "濟", "unicode": "U+6FDF" },
+  "斎": { "kyuji": "齋", "unicode": "U+9F4B" },
+  "剤": { "kyuji": "劑", "unicode": "U+5291" },
+  "殺": { "kyuji": "殺", "unicode": "U+F970" },
+  "雑": { "kyuji": "雜", "unicode": "U+96DC" },
+  "参": { "kyuji": "參", "unicode": "U+53C3" },
+  "桟": { "kyuji": "棧", "unicode": "U+68E7" },
+  "蚕": { "kyuji": "蠶", "unicode": "U+8836" },
+  "惨": { "kyuji": "慘", "unicode": "U+6158" },
+  "産": { "kyuji": "產", "unicode": "U+7522" },
+  "賛": { "kyuji": "贊", "unicode": "U+8D0A" },
+  "残": { "kyuji": "殘", "unicode": "U+6B98" },
+  "糸": { "kyuji": "絲", "unicode": "U+7D72" },
+  "祉": { "kyuji": "祉", "unicode": "U+FA4D" },
+  "視": { "kyuji": "視", "unicode": "U+FA61" },
+  "歯": { "kyuji": "齒", "unicode": "U+9F52" },
+  "飼": { "kyuji": "飼", "unicode": "U+FA2B" },
+  "児": { "kyuji": "兒", "unicode": "U+5152" },
+  "辞": { "kyuji": "辭", "unicode": "U+8FAD" },
+  "湿": { "kyuji": "濕", "unicode": "U+6FD5" },
+  "実": { "kyuji": "實", "unicode": "U+5BE6" },
+  "写": { "kyuji": "寫", "unicode": "U+5BEB" },
+  "社": { "kyuji": "社", "unicode": "U+FA4C" },
+  "舎": { "kyuji": "舍", "unicode": "U+820D" },
+  "者": { "kyuji": "者", "unicode": "U+FA5B" },
+  "煮": { "kyuji": "煮", "unicode": "U+FA48" },
+  "釈": { "kyuji": "釋", "unicode": "U+91CB" },
+  "寿": { "kyuji": "壽", "unicode": "U+58FD" },
+  "収": { "kyuji": "收", "unicode": "U+6536" },
+  "臭": { "kyuji": "臭", "unicode": "U+FA5C" },
+  "従": { "kyuji": "從", "unicode": "U+5F9E" },
+  "渋": { "kyuji": "澁", "unicode": "U+6F81" },
+  "獣": { "kyuji": "獸", "unicode": "U+7378" },
+  "縦": { "kyuji": "縱", "unicode": "U+7E31" },
+  "祝": { "kyuji": "祝", "unicode": "U+FA51" },
+  "粛": { "kyuji": "肅", "unicode": "U+8085" },
+  "処": { "kyuji": "處", "unicode": "U+8655" },
+  "暑": { "kyuji": "暑", "unicode": "U+FA43" },
+  "署": { "kyuji": "署", "unicode": "U+FA5A" },
+  "緒": { "kyuji": "緖", "unicode": "U+7DD6" },
+  "諸": { "kyuji": "諸", "unicode": "U+FA22" },
+  "叙": { "kyuji": "敍", "unicode": "U+654D" },
+  "尚": { "kyuji": "尙", "unicode": "U+5C19" },
+  "将": { "kyuji": "將", "unicode": "U+5C07" },
+  "祥": { "kyuji": "祥", "unicode": "U+FA1A" },
+  "称": { "kyuji": "稱", "unicode": "U+7A31" },
+  "渉": { "kyuji": "涉", "unicode": "U+6D89" },
+  "焼": { "kyuji": "燒", "unicode": "U+71D2" },
+  "証": { "kyuji": "證", "unicode": "U+8B49" },
+  "奨": { "kyuji": "奬", "unicode": "U+596C" },
+  "条": { "kyuji": "條", "unicode": "U+689D" },
+  "状": { "kyuji": "狀", "unicode": "U+72C0" },
+  "乗": { "kyuji": "乘", "unicode": "U+4E58" },
+  "浄": { "kyuji": "淨", "unicode": "U+6DE8" },
+  "剰": { "kyuji": "剩", "unicode": "U+5269" },
+  "畳": { "kyuji": "疊", "unicode": "U+758A" },
+  "縄": { "kyuji": "繩", "unicode": "U+7E69" },
+  "壌": { "kyuji": "壤", "unicode": "U+58E4" },
+  "嬢": { "kyuji": "孃", "unicode": "U+5B43" },
+  "譲": { "kyuji": "讓", "unicode": "U+8B93" },
+  "醸": { "kyuji": "釀", "unicode": "U+91C0" },
+  "触": { "kyuji": "觸", "unicode": "U+89F8" },
+  "嘱": { "kyuji": "囑", "unicode": "U+56D1" },
+  "神": { "kyuji": "神", "unicode": "U+FA19" },
+  "真": { "kyuji": "眞", "unicode": "U+771E" },
+  "寝": { "kyuji": "寢", "unicode": "U+5BE2" },
+  "慎": { "kyuji": "愼", "unicode": "U+613C" },
+  "尽": { "kyuji": "盡", "unicode": "U+76E1" },
+  "図": { "kyuji": "圖", "unicode": "U+5716" },
+  "粋": { "kyuji": "粹", "unicode": "U+7CB9" },
+  "酔": { "kyuji": "醉", "unicode": "U+9189" },
+  "穂": { "kyuji": "穗", "unicode": "U+7A57" },
+  "随": { "kyuji": "隨", "unicode": "U+96A8" },
+  "髄": { "kyuji": "髓", "unicode": "U+9AD3" },
+  "枢": { "kyuji": "樞", "unicode": "U+6A1E" },
+  "数": { "kyuji": "數", "unicode": "U+6578" },
+  "瀬": { "kyuji": "瀨", "unicode": "U+7028" },
+  "声": { "kyuji": "聲", "unicode": "U+8072" },
+  "斉": { "kyuji": "齊", "unicode": "U+9F4A" },
+  "晴": { "kyuji": "晴", "unicode": "U+FA12" },
+  "精": { "kyuji": "精", "unicode": "U+FA1D" },
+  "静": { "kyuji": "靜", "unicode": "U+975C" },
+  "税": { "kyuji": "稅", "unicode": "U+7A05" },
+  "窃": { "kyuji": "竊", "unicode": "U+7ACA" },
+  "摂": { "kyuji": "攝", "unicode": "U+651D" },
+  "節": { "kyuji": "節", "unicode": "U+FA56" },
+  "説": { "kyuji": "說", "unicode": "U+8AAA" },
+  "絶": { "kyuji": "絕", "unicode": "U+7D55" },
+  "専": { "kyuji": "專", "unicode": "U+5C08" },
+  "浅": { "kyuji": "淺", "unicode": "U+6DFA" },
+  "戦": { "kyuji": "戰", "unicode": "U+6230" },
+  "践": { "kyuji": "踐", "unicode": "U+8E10" },
+  "銭": { "kyuji": "錢", "unicode": "U+9322" },
+  "潜": { "kyuji": "潛", "unicode": "U+6F5B" },
+  "繊": { "kyuji": "纖", "unicode": "U+7E96" },
+  "禅": { "kyuji": "禪", "unicode": "U+79AA" },
+  "祖": { "kyuji": "祖", "unicode": "U+FA50" },
+  "双": { "kyuji": "雙", "unicode": "U+96D9" },
+  "壮": { "kyuji": "壯", "unicode": "U+58EF" },
+  "争": { "kyuji": "爭", "unicode": "U+722D" },
+  "荘": { "kyuji": "莊", "unicode": "U+838A" },
+  "捜": { "kyuji": "搜", "unicode": "U+641C" },
+  "挿": { "kyuji": "插", "unicode": "U+63D2" },
+  "巣": { "kyuji": "巢", "unicode": "U+5DE2" },
+  "曽": { "kyuji": "曾", "unicode": "U+66FE" },
+  "痩": { "kyuji": "瘦", "unicode": "U+7626" },
+  "装": { "kyuji": "裝", "unicode": "U+88DD" },
+  "僧": { "kyuji": "僧", "unicode": "U+FA31" },
+  "層": { "kyuji": "層", "unicode": "U+FA3B" },
+  "総": { "kyuji": "總", "unicode": "U+7E3D" },
+  "騒": { "kyuji": "騷", "unicode": "U+9A37" },
+  "増": { "kyuji": "增", "unicode": "U+589E" },
+  "憎": { "kyuji": "憎", "unicode": "U+FA3F" },
+  "蔵": { "kyuji": "藏", "unicode": "U+85CF" },
+  "贈": { "kyuji": "贈", "unicode": "U+FA65" },
+  "臓": { "kyuji": "臟", "unicode": "U+81DF" },
+  "即": { "kyuji": "卽", "unicode": "U+537D" },
+  "属": { "kyuji": "屬", "unicode": "U+5C6C" },
+  "続": { "kyuji": "續", "unicode": "U+7E8C" },
+  "堕": { "kyuji": "墮", "unicode": "U+58AE" },
+  "対": { "kyuji": "對", "unicode": "U+5C0D" },
+  "体": { "kyuji": "體", "unicode": "U+9AD4" },
+  "帯": { "kyuji": "帶", "unicode": "U+5E36" },
+  "滞": { "kyuji": "滯", "unicode": "U+6EEF" },
+  "台": { "kyuji": "臺", "unicode": "U+81FA" },
+  "滝": { "kyuji": "瀧", "unicode": "U+7027" },
+  "択": { "kyuji": "擇", "unicode": "U+64C7" },
+  "沢": { "kyuji": "澤", "unicode": "U+6FA4" },
+  "脱": { "kyuji": "脫", "unicode": "U+812B" },
+  "担": { "kyuji": "擔", "unicode": "U+64D4" },
+  "単": { "kyuji": "單", "unicode": "U+55AE" },
+  "胆": { "kyuji": "膽", "unicode": "U+81BD" },
+  "嘆": { "kyuji": "嘆", "unicode": "U+FA37" },
+  "団": { "kyuji": "團", "unicode": "U+5718" },
+  "断": { "kyuji": "斷", "unicode": "U+65B7" },
+  "弾": { "kyuji": "彈", "unicode": "U+5F48" },
+  "遅": { "kyuji": "遲", "unicode": "U+9072" },
+  "痴": { "kyuji": "癡", "unicode": "U+7661" },
+  "虫": { "kyuji": "蟲", "unicode": "U+87F2" },
+  "昼": { "kyuji": "晝", "unicode": "U+665D" },
+  "鋳": { "kyuji": "鑄", "unicode": "U+9444" },
+  "著": { "kyuji": "著", "unicode": "U+FA5F" },
+  "庁": { "kyuji": "廳", "unicode": "U+5EF3" },
+  "徴": { "kyuji": "徵", "unicode": "U+5FB5" },
+  "聴": { "kyuji": "聽", "unicode": "U+807D" },
+  "懲": { "kyuji": "懲", "unicode": "U+FA40" },
+  "勅": { "kyuji": "敕", "unicode": "U+6555" },
+  "塚": { "kyuji": "塚", "unicode": "U+FA10" },
+  "逓": { "kyuji": "遞", "unicode": "U+905E" },
+  "鉄": { "kyuji": "鐵", "unicode": "U+9435" },
+  "点": { "kyuji": "點", "unicode": "U+9EDE" },
+  "転": { "kyuji": "轉", "unicode": "U+8F49" },
+  "伝": { "kyuji": "傳", "unicode": "U+50B3" },
+  "都": { "kyuji": "都", "unicode": "U+FA26" },
+  "灯": { "kyuji": "燈", "unicode": "U+71C8" },
+  "当": { "kyuji": "當", "unicode": "U+7576" },
+  "党": { "kyuji": "黨", "unicode": "U+9EE8" },
+  "盗": { "kyuji": "盜", "unicode": "U+76DC" },
+  "稲": { "kyuji": "稻", "unicode": "U+7A3B" },
+  "闘": { "kyuji": "鬪", "unicode": "U+9B2A" },
+  "徳": { "kyuji": "德", "unicode": "U+5FB7" },
+  "独": { "kyuji": "獨", "unicode": "U+7368" },
+  "読": { "kyuji": "讀", "unicode": "U+8B80" },
+  "突": { "kyuji": "突", "unicode": "U+FA55" },
+  "届": { "kyuji": "屆", "unicode": "U+5C46" },
+  "難": { "kyuji": "難", "unicode": "U+FA68" },
+  "弐": { "kyuji": "貳", "unicode": "U+8CB3" },
+  "悩": { "kyuji": "惱", "unicode": "U+60F1" },
+  "脳": { "kyuji": "腦", "unicode": "U+8166" },
+  "覇": { "kyuji": "霸", "unicode": "U+9738" },
+  "拝": { "kyuji": "拜", "unicode": "U+62DC" },
+  "廃": { "kyuji": "廢", "unicode": "U+5EE2" },
+  "売": { "kyuji": "賣", "unicode": "U+8CE3" },
+  "梅": { "kyuji": "梅", "unicode": "U+FA44" },
+  "麦": { "kyuji": "麥", "unicode": "U+9EA5" },
+  "発": { "kyuji": "發", "unicode": "U+767C" },
+  "髪": { "kyuji": "髮", "unicode": "U+9AEE" },
+  "抜": { "kyuji": "拔", "unicode": "U+62D4" },
+  "飯": { "kyuji": "飯", "unicode": "U+FA2A" },
+  "繁": { "kyuji": "繁", "unicode": "U+FA59" },
+  "晩": { "kyuji": "晚", "unicode": "U+665A" },
+  "蛮": { "kyuji": "蠻", "unicode": "U+883B" },
+  "卑": { "kyuji": "卑", "unicode": "U+FA35" },
+  "秘": { "kyuji": "祕", "unicode": "U+7955" },
+  "碑": { "kyuji": "碑", "unicode": "U+FA4B" },
+  "姫": { "kyuji": "姬", "unicode": "U+59EC" },
+  "浜": { "kyuji": "濱", "unicode": "U+6FF1" },
+  "賓": { "kyuji": "賓", "unicode": "U+FA64" },
+  "頻": { "kyuji": "頻", "unicode": "U+FA6A" },
+  "敏": { "kyuji": "敏", "unicode": "U+FA41" },
+  "瓶": { "kyuji": "甁", "unicode": "U+7501" },
+  "侮": { "kyuji": "侮", "unicode": "U+FA30" },
+  "福": { "kyuji": "福", "unicode": "U+FA1B" },
+  "払": { "kyuji": "拂", "unicode": "U+62C2" },
+  "仏": { "kyuji": "佛", "unicode": "U+4F5B" },
+  "併": { "kyuji": "倂", "unicode": "U+5002" },
+  "並": { "kyuji": "竝", "unicode": "U+7ADD" },
+  "塀": { "kyuji": "塀", "unicode": "U+FA39" },
+  "餅": { "kyuji": "餠", "unicode": "U+9920" },
+  "辺": { "kyuji": "邊", "unicode": "U+908A" },
+  "変": { "kyuji": "變", "unicode": "U+8B8A" },
+  "弁": { "kyuji": "辨瓣辯", "unicode": "U+8FA8 U+74E3 U+8FAF" },
+  "勉": { "kyuji": "勉", "unicode": "U+FA33" },
+  "歩": { "kyuji": "步", "unicode": "U+6B65" },
+  "宝": { "kyuji": "寶", "unicode": "U+5BF6" },
+  "豊": { "kyuji": "豐", "unicode": "U+8C50" },
+  "褒": { "kyuji": "襃", "unicode": "U+8943" },
+  "墨": { "kyuji": "墨", "unicode": "U+FA3A" },
+  "翻": { "kyuji": "飜", "unicode": "U+98DC" },
+  "毎": { "kyuji": "每", "unicode": "U+6BCF" },
+  "万": { "kyuji": "萬", "unicode": "U+842C" },
+  "満": { "kyuji": "滿", "unicode": "U+6EFF" },
+  "免": { "kyuji": "免", "unicode": "U+FA32" },
+  "麺": { "kyuji": "麵", "unicode": "U+9EB5" },
+  "黙": { "kyuji": "默", "unicode": "U+9ED8" },
+  "弥": { "kyuji": "彌", "unicode": "U+5F4C" },
+  "訳": { "kyuji": "譯", "unicode": "U+8B6F" },
+  "薬": { "kyuji": "藥", "unicode": "U+85E5" },
+  "与": { "kyuji": "與", "unicode": "U+8207" },
+  "予": { "kyuji": "豫", "unicode": "U+8C6B" },
+  "余": { "kyuji": "餘", "unicode": "U+9918" },
+  "誉": { "kyuji": "譽", "unicode": "U+8B7D" },
+  "揺": { "kyuji": "搖", "unicode": "U+6416" },
+  "様": { "kyuji": "樣", "unicode": "U+6A23" },
+  "謡": { "kyuji": "謠", "unicode": "U+8B20" },
+  "来": { "kyuji": "來", "unicode": "U+4F86" },
+  "頼": { "kyuji": "賴", "unicode": "U+8CF4" },
+  "乱": { "kyuji": "亂", "unicode": "U+4E82" },
+  "覧": { "kyuji": "覽", "unicode": "U+89BD" },
+  "欄": { "kyuji": "欄", "unicode": "U+F91D" },
+  "竜": { "kyuji": "龍", "unicode": "U+9F8D" },
+  "隆": { "kyuji": "隆", "unicode": "U+F9DC" },
+  "虜": { "kyuji": "虜", "unicode": "U+F936" },
+  "両": { "kyuji": "兩", "unicode": "U+5169" },
+  "猟": { "kyuji": "獵", "unicode": "U+7375" },
+  "緑": { "kyuji": "綠", "unicode": "U+7DA0" },
+  "涙": { "kyuji": "淚", "unicode": "U+6DDA" },
+  "塁": { "kyuji": "壘", "unicode": "U+58D8" },
+  "類": { "kyuji": "類", "unicode": "U+F9D0" },
+  "礼": { "kyuji": "禮", "unicode": "U+79AE" },
+  "励": { "kyuji": "勵", "unicode": "U+52F5" },
+  "戻": { "kyuji": "戾", "unicode": "U+623E" },
+  "霊": { "kyuji": "靈", "unicode": "U+9748" },
+  "齢": { "kyuji": "齡", "unicode": "U+9F61" },
+  "暦": { "kyuji": "曆", "unicode": "U+66C6" },
+  "歴": { "kyuji": "歷", "unicode": "U+6B77" },
+  "恋": { "kyuji": "戀", "unicode": "U+6200" },
+  "練": { "kyuji": "練", "unicode": "U+FA57" },
+  "錬": { "kyuji": "鍊", "unicode": "U+934A" },
+  "炉": { "kyuji": "爐", "unicode": "U+7210" },
+  "労": { "kyuji": "勞", "unicode": "U+52DE" },
+  "郎": { "kyuji": "郞", "unicode": "U+90DE" },
+  "朗": { "kyuji": "朗", "unicode": "U+F929" },
+  "廊": { "kyuji": "廊", "unicode": "U+F928" },
+  "楼": { "kyuji": "樓", "unicode": "U+6A13" },
+  "録": { "kyuji": "錄", "unicode": "U+9304" },
+  "湾": { "kyuji": "灣", "unicode": "U+7063" }
+}

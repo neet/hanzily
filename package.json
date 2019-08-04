@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/popup/index.html src/background/main.ts src/content-scripts/main.ts",
-    "start": "cp ./config/manifest.json ./dist/ && web-ext run -s dist/"
+    "build": "parcel build ./src/background/main.ts ./src/content-scripts/main.ts ./src/popup/index.html && cp ./config/manifest.json ./dist",
+    "build:dev": "cross-env NODE_ENV=development parcel build --no-minify ./src/background/main.ts ./src/content-scripts/main.ts ./src/popup/index.html && cp ./config/manifest.json ./dist",
+    "start": "web-ext run -s dist/"
   },
   "dependencies": {
     "@types/react": "^16.8.24",
