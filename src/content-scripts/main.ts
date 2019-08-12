@@ -2,12 +2,23 @@ import { browser } from 'webextension-polyfill-ts';
 import { isLeft } from 'fp-ts/lib/Either';
 import * as t from 'io-ts';
 import { Kyujitai } from '@neetshin/kyujitai';
-import { dataset } from '@neetshin/kyujitai/dist/main/dataset';
+import { dataset } from '@neetshin/kyujitai/esm/dataset';
 import { SyncStorage, DocumentTransformerSetting } from '../sync-storage';
+
+const defaultBannedTagNames = [
+  'SCRIPT',
+  'STYLE',
+  'INPUT',
+  'TEXTAREA',
+  'META',
+  'LINK',
+  'svg',
+  'path',
+];
 
 class ContentScript {
   private readonly kyujitai: Kyujitai;
-  private readonly kyujifiedNodes = new WeakSet<Node>();
+  private readonly kyujitaizedNodes = new WeakSet<Node>();
 
   private constructor(kyujitai: Kyujitai) {
     this.kyujitai = kyujitai;
@@ -27,74 +38,83 @@ class ContentScript {
     if (!globalConfig) return;
 
     if (globalConfig.documentTransformerSetting.transformContent) {
-      // Kyujify body
-      contentScript.retriveTerminals(document).forEach(elm => {
-        return contentScript.kyujifyNode(elm);
-      });
+      // kyujitaize body
+      for (const node of contentScript.retriveTerminals(document.body)) {
+        contentScript.kyujitaizeNode(node);
+      }
     }
 
     // Observe DOM updates
     contentScript.observeDomUpdates(
-      document,
+      document.body,
       globalConfig.documentTransformerSetting,
     );
+
+    // eslint-disable-next-line no-console
+    console.log('Hanzily: initialization completed');
   };
 
-  kyujifyNode = async (node: Node, force = false) => {
+  kyujitaizeNode = async (node: Node, force = false) => {
     // Return if node has alredy been kyujified
-    if (!force && this.kyujifiedNodes.has(node)) return;
+    if (this.kyujitaizedNodes.has(node) && !force) return;
 
     const originalText = node.textContent;
     if (!originalText || !originalText.trim()) return;
 
-    const kyujifiedText = await this.kyujitai.kyujitaize(originalText);
-    if (originalText === kyujifiedText) return;
+    const kyujitaizedText = await this.kyujitai.kyujitaize(originalText);
+    if (originalText === kyujitaizedText) return;
 
-    const newNode = // do this with closest element instead
-      node instanceof Element
-        ? (node.cloneNode() as Element)
-        : document.createElement('span');
-
-    newNode.setAttribute('title', originalText);
-    newNode.setAttribute('data-shinji', originalText);
-    newNode.textContent = kyujifiedText;
+    const kyujitaizedNode = document.createElement('span');
+    kyujitaizedNode.setAttribute('title', originalText);
+    kyujitaizedNode.setAttribute('aria-label', originalText);
+    kyujitaizedNode.setAttribute('data-shinjitai', originalText);
+    kyujitaizedNode.textContent = kyujitaizedText;
 
     if (!node.parentNode) {
       throw Error("Root element can't be kyujified");
     }
 
-    node.parentNode.replaceChild(newNode, node);
-    this.kyujifiedNodes.add(newNode);
+    node.parentNode.replaceChild(kyujitaizedNode, node);
 
-    return { node, newNode };
+    if (!kyujitaizedNode.firstChild) {
+      throw Error('Failed to insert kyujitaized node');
+    }
+
+    this.kyujitaizedNodes.add(kyujitaizedNode.firstChild);
+
+    return { node, kyujitaizedNode };
   };
 
   retriveTerminals = (
     node: Node,
-    banTagName: string[] = ['SCRIPT', 'STYLE', 'INPUT', 'TEXTAREA'],
+    bannedTagNames = defaultBannedTagNames,
   ): Node[] => {
     if (!node.childNodes.length) return [node];
 
     return Array.from(node.childNodes)
-      .filter(childNode =>
-        childNode instanceof Element
-          ? !banTagName.includes(childNode.tagName)
-          : true,
-      )
-      .flatMap(childNode => this.retriveTerminals(childNode, banTagName));
+      .filter(childNode => {
+        if (
+          childNode instanceof Element &&
+          bannedTagNames.includes(childNode.tagName)
+        ) {
+          return false;
+        }
+
+        return true;
+      })
+      .flatMap(childNode => this.retriveTerminals(childNode, bannedTagNames));
   };
 
   handleNodeAdded = (addedNodes: NodeList) => {
     for (const node of Array.from(addedNodes)) {
       for (const terminal of this.retriveTerminals(node)) {
-        console.log(terminal);
-        // this.kyujifyNode(terminal);
+        this.kyujitaizeNode(terminal);
       }
     }
   };
 
   handleCharacterDataMutated = (target: Node) => {
-    this.kyujifyNode(target, true);
+    this.kyujitaizeNode(target, true);
   };
 
   observeDomUpdates = (
@@ -102,7 +122,7 @@ class ContentScript {
     storage: t.TypeOf<typeof DocumentTransformerSetting>,
   ) => {
     // Add mutation observer to the body and subscribe for updates of children
-    new MutationObserver(records => {
+    new MutationObserver(async records => {
       for (const { target, addedNodes, oldValue } of records) {
         if (storage.transformContent) {
           if (addedNodes) this.handleNodeAdded(addedNodes);

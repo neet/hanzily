@@ -9,7 +9,7 @@
     "start": "web-ext run -s dist/"
   },
   "dependencies": {
-    "@neetshin/kyujitai": "^2.1.0",
+    "@neetshin/kyujitai": "^2.1.2",
     "@types/react": "^16.9.1",
     "@types/react-dom": "^16.8.5",
     "@types/styled-components": "^4.1.18",
