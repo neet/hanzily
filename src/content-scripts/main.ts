@@ -1,115 +1,122 @@
 import { browser } from 'webextension-polyfill-ts';
-import { SyncStorage } from '../sync-storage';
-import { kyujify } from './util';
+import { isLeft } from 'fp-ts/lib/Either';
+import * as t from 'io-ts';
+import { Kyujitai } from '@neetshin/kyujitai';
+import { dataset } from '@neetshin/kyujitai/dist/main/dataset';
+import { SyncStorage, DocumentTransformerSetting } from '../sync-storage';
 
-const kyujifiedNodeStore = new WeakSet<Node>();
+class ContentScript {
+  private readonly kyujitai: Kyujitai;
+  private readonly kyujifiedNodes = new WeakSet<Node>();
 
-async function kyujifyNode(node: Node, force = false) {
-  // Return if node has alredy been kyujified
-  if (!force && kyujifiedNodeStore.has(node)) return;
-
-  const originalText = node.textContent;
-  if (!originalText || !originalText.trim()) return;
-
-  const kyujifiedText = await kyujify(originalText);
-  if (originalText === kyujifiedText) return;
-
-  const newNode = // do this with closest element instead
-    node instanceof Element
-      ? (node.cloneNode() as Element)
-      : document.createElement('span');
-
-  newNode.setAttribute('title', originalText);
-  newNode.setAttribute('data-shinji', originalText);
-  newNode.textContent = kyujifiedText;
-
-  if (!node.parentNode) {
-    throw Error("Root element can't be kyujified");
+  private constructor(kyujitai: Kyujitai) {
+    this.kyujitai = kyujitai;
   }
 
-  node.parentNode.replaceChild(newNode, node);
-  kyujifiedNodeStore.add(newNode);
+  static init = async () => {
+    const kyujitai = await Kyujitai.init({ dataset });
+    const rawdata = await browser.storage.sync.get();
+    const storage = SyncStorage.decode(rawdata);
+    if (isLeft(storage)) return;
 
-  return { node, newNode };
-}
+    const contentScript = new ContentScript(kyujitai);
 
-function retriveTerminals(
-  node: Node,
-  banTagName: string[] = ['SCRIPT', 'STYLE', 'INPUT', 'TEXTAREA'],
-): Node[] {
-  if (!node.childNodes.length) return [node];
+    const globalConfig = storage.right.preferences.siteSettings.find(
+      ({ urlMatchPattern }) => urlMatchPattern === '<all_sites>',
+    );
+    if (!globalConfig) return;
 
-  return Array.from(node.childNodes)
-    .filter(childNode =>
-      childNode instanceof Element
-        ? !banTagName.includes(childNode.tagName)
-        : true,
-    )
-    .flatMap(childNode => retriveTerminals(childNode, banTagName));
-}
-
-// function observeUserInputs(element: Element) {
-//   element.addEventListener('input', async event => {
-//     // Cancel when composing
-//     if ((event as any).isComposing || (event as any).which === 229) return;
-
-//     if (
-//       event.target instanceof HTMLTextAreaElement ||
-//       event.target instanceof HTMLInputElement
-//     ) {
-//       const kyujified = await kyujify(event.target.value);
-//       // eslint-disable-next-line require-atomic-updates
-//       event.target.value = kyujified;
-//     }
-//   });
-// }
-
-const handleNodeAdded = (addedNodes: NodeList) => {
-  for (const node of Array.from(addedNodes)) {
-    for (const terminal of retriveTerminals(node)) {
-      kyujifyNode(terminal);
+    if (globalConfig.documentTransformerSetting.transformContent) {
+      // Kyujify body
+      contentScript.retriveTerminals(document).forEach(elm => {
+        return contentScript.kyujifyNode(elm);
+      });
     }
-  }
-};
 
-const handleCharacterDataMutated = (target: Node) => {
-  kyujifyNode(target, true);
-};
+    // Observe DOM updates
+    contentScript.observeDomUpdates(
+      document,
+      globalConfig.documentTransformerSetting,
+    );
+  };
 
-function observeDomUpdates(element: Node, storage: SyncStorage) {
-  // Add mutation observer to the body and subscribe for updates of children
-  new MutationObserver(records => {
-    for (const { target, addedNodes, oldValue } of records) {
-      if (storage.transform_content) {
-        if (addedNodes) handleNodeAdded(addedNodes);
-        if (oldValue) handleCharacterDataMutated(target);
+  kyujifyNode = async (node: Node, force = false) => {
+    // Return if node has alredy been kyujified
+    if (!force && this.kyujifiedNodes.has(node)) return;
+
+    const originalText = node.textContent;
+    if (!originalText || !originalText.trim()) return;
+
+    const kyujifiedText = await this.kyujitai.kyujitaize(originalText);
+    if (originalText === kyujifiedText) return;
+
+    const newNode = // do this with closest element instead
+      node instanceof Element
+        ? (node.cloneNode() as Element)
+        : document.createElement('span');
+
+    newNode.setAttribute('title', originalText);
+    newNode.setAttribute('data-shinji', originalText);
+    newNode.textContent = kyujifiedText;
+
+    if (!node.parentNode) {
+      throw Error("Root element can't be kyujified");
+    }
+
+    node.parentNode.replaceChild(newNode, node);
+    this.kyujifiedNodes.add(newNode);
+
+    return { node, newNode };
+  };
+
+  retriveTerminals = (
+    node: Node,
+    banTagName: string[] = ['SCRIPT', 'STYLE', 'INPUT', 'TEXTAREA'],
+  ): Node[] => {
+    if (!node.childNodes.length) return [node];
+
+    return Array.from(node.childNodes)
+      .filter(childNode =>
+        childNode instanceof Element
+          ? !banTagName.includes(childNode.tagName)
+          : true,
+      )
+      .flatMap(childNode => this.retriveTerminals(childNode, banTagName));
+  };
+
+  handleNodeAdded = (addedNodes: NodeList) => {
+    for (const node of Array.from(addedNodes)) {
+      for (const terminal of this.retriveTerminals(node)) {
+        console.log(terminal);
+        // this.kyujifyNode(terminal);
       }
     }
-  }).observe(element, {
-    characterData: true,
-    characterDataOldValue: true,
-    childList: true,
-    subtree: true,
-  });
-}
+  };
 
-async function main() {
-  const storage = (await browser.storage.sync.get()) as SyncStorage;
+  handleCharacterDataMutated = (target: Node) => {
+    this.kyujifyNode(target, true);
+  };
 
-  // if (storage.transform_input) {
-  //   // Observe textarea / input changes
-  //   document.querySelectorAll('textarea, input').forEach(observeUserInputs);
-  // }
-
-  if (storage.transform_content) {
-    // Kyujify body
-    retriveTerminals(document).forEach(elm => {
-      return kyujifyNode(elm);
+  observeDomUpdates = (
+    element: Node,
+    storage: t.TypeOf<typeof DocumentTransformerSetting>,
+  ) => {
+    // Add mutation observer to the body and subscribe for updates of children
+    new MutationObserver(records => {
+      for (const { target, addedNodes, oldValue } of records) {
+        if (storage.transformContent) {
+          if (addedNodes) this.handleNodeAdded(addedNodes);
+          if (oldValue) this.handleCharacterDataMutated(target);
+        }
+      }
+    }).observe(element, {
+      characterData: true,
+      characterDataOldValue: true,
+      childList: true,
+      subtree: true,
     });
-  }
-
-  // Observe DOM updates
-  observeDomUpdates(document, storage);
+  };
 }
 
-main();
+// main
+ContentScript.init();

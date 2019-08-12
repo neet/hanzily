@@ -9,11 +9,14 @@
     "start": "web-ext run -s dist/"
   },
   "dependencies": {
-    "@types/react": "^16.8.24",
+    "@neetshin/kyujitai": "^2.1.0",
+    "@types/react": "^16.9.1",
     "@types/react-dom": "^16.8.5",
     "@types/styled-components": "^4.1.18",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "fp-ts": "^2.0.5",
+    "io-ts": "^2.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "styled-components": "^4.3.2",
     "webextension-polyfill-ts": "^0.9.1"
   },
