@@ -1,3 +1,4 @@
+import { isLeft } from 'fp-ts/lib/Either';
 import { browser } from 'webextension-polyfill-ts';
 import { SyncStorage } from '../sync-storage';
 
@@ -7,24 +8,30 @@ const populateSyncStorage = () => {
       state: 'enabled',
       siteSettings: [
         {
-          urlMatchPattern: '<all_sites>',
+          title: '全てのWebサイト',
+          thumbnail: undefined,
+          urlMatchPattern: '*',
           documentTransformerSetting: {
             transformContent: true,
             transformInput: false,
-            ignoreNodePatterns: ['script', 'style', 'textarea', 'input'],
-            ignorePseudoTextareaNodePatterns: ['.DraftEditor-root'],
+            ignoreNodePatterns: [],
             contextualTransformations: [],
           },
         },
       ],
-      blacklist: [],
-      whitelist: [],
-      activeListType: 'blacklist',
     },
   });
 
   browser.storage.sync.set(initialStorage);
 };
+
+(async () => {
+  const storage = SyncStorage.decode(await browser.storage.sync.get());
+
+  if (isLeft(storage)) {
+    populateSyncStorage();
+  }
+})();
 
 browser.runtime.onInstalled.addListener(e => {
   if (e.reason === 'install') {

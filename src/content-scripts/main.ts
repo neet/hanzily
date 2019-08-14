@@ -19,25 +19,48 @@ const defaultBannedTagNames = [
 class ContentScript {
   private readonly kyujitai: Kyujitai;
   private readonly kyujitaizedNodes = new WeakSet<Node>();
+  private readonly documentTransformerSetting: t.TypeOf<
+    typeof DocumentTransformerSetting
+  >;
 
-  private constructor(kyujitai: Kyujitai) {
+  private constructor(
+    kyujitai: Kyujitai,
+    activeSetting: t.TypeOf<typeof DocumentTransformerSetting>,
+  ) {
     this.kyujitai = kyujitai;
+    this.documentTransformerSetting = activeSetting;
   }
 
   static init = async () => {
-    const kyujitai = await Kyujitai.init({ dataset });
     const rawdata = await browser.storage.sync.get();
     const storage = SyncStorage.decode(rawdata);
-    if (isLeft(storage)) return;
 
-    const contentScript = new ContentScript(kyujitai);
+    if (isLeft(storage)) {
+      return;
+    }
 
-    const globalConfig = storage.right.preferences.siteSettings.find(
-      ({ urlMatchPattern }) => urlMatchPattern === '<all_sites>',
-    );
-    if (!globalConfig) return;
+    const { preferences } = storage.right;
+    const kyujitai = await Kyujitai.init({ dataset });
 
-    if (globalConfig.documentTransformerSetting.transformContent) {
+    const activeSetting = preferences.siteSettings
+      .filter(setting => {
+        return new RegExp(setting.urlMatchPattern).test(location.href);
+      })
+      .reduce<t.TypeOf<typeof DocumentTransformerSetting>>(
+        (prev, cur) => {
+          return { prev, ...cur.documentTransformerSetting };
+        },
+        {
+          transformContent: true,
+          transformInput: false,
+          ignoreNodePatterns: [],
+          contextualTransformations: [],
+        },
+      );
+
+    const contentScript = new ContentScript(kyujitai, activeSetting);
+
+    if (contentScript.documentTransformerSetting.transformContent) {
       // kyujitaize body
       for (const node of contentScript.retriveTerminals(document.body)) {
         contentScript.kyujitaizeNode(node);
@@ -47,11 +70,12 @@ class ContentScript {
     // Observe DOM updates
     contentScript.observeDomUpdates(
       document.body,
-      globalConfig.documentTransformerSetting,
+      contentScript.documentTransformerSetting,
     );
 
     // eslint-disable-next-line no-console
     console.log('Hanzily: initialization completed');
+    return contentScript;
   };
 
   kyujitaizeNode = async (node: Node, force = false) => {
