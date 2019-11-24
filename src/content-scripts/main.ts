@@ -1,9 +1,12 @@
 import { browser } from 'webextension-polyfill-ts';
 import { isLeft } from 'fp-ts/lib/Either';
-import * as t from 'io-ts';
 import { Kyujitai } from '@neetshin/kyujitai';
 import { dataset } from '@neetshin/kyujitai/dataset';
-import { SyncStorage, DocumentTransformerSetting } from '../sync-storage';
+import {
+  SyncStorageCodec,
+  DocumentTransformerSetting,
+  Preferences,
+} from '../sync-storage';
 
 const defaultBannedTagNames = [
   'SCRIPT',
@@ -16,16 +19,16 @@ const defaultBannedTagNames = [
   'path',
 ];
 
+// const editableQueries = ['input', 'textarea', '*[contenteditable="true"]'];
+
 class ContentScript {
   private readonly kyujitai: Kyujitai;
   private readonly kyujitaizedNodes = new WeakSet<Node>();
-  private readonly documentTransformerSetting: t.TypeOf<
-    typeof DocumentTransformerSetting
-  >;
+  private readonly documentTransformerSetting: DocumentTransformerSetting;
 
   private constructor(
     kyujitai: Kyujitai,
-    activeSetting: t.TypeOf<typeof DocumentTransformerSetting>,
+    activeSetting: DocumentTransformerSetting,
   ) {
     this.kyujitai = kyujitai;
     this.documentTransformerSetting = activeSetting;
@@ -33,20 +36,35 @@ class ContentScript {
 
   static init = async () => {
     const rawdata = await browser.storage.sync.get();
-    const storage = SyncStorage.decode(rawdata);
+    const storage = SyncStorageCodec.decode(rawdata);
+    if (isLeft(storage)) return;
+    const { preferences } = storage.right;
 
-    if (isLeft(storage)) {
-      return;
+    const kyujitai = await Kyujitai.init({ dataset });
+    const activeSetting = ContentScript.getActiveSetting(preferences);
+    const contentScript = new ContentScript(kyujitai, activeSetting);
+
+    // kyujitaize body
+    if (contentScript.documentTransformerSetting.transformContent) {
+      for (const node of contentScript.retriveTerminals(document.body)) {
+        contentScript.kyujitaizeNode(node);
+      }
     }
 
-    const { preferences } = storage.right;
-    const kyujitai = await Kyujitai.init({ dataset });
+    // Observe DOM updates
+    contentScript.observeDomUpdates(document.body);
 
-    const activeSetting = preferences.siteSettings
+    // eslint-disable-next-line no-console
+    console.log('Hanzily: initialization completed');
+    return contentScript;
+  };
+
+  private static getActiveSetting = (preferences: Preferences) => {
+    return preferences.siteSettings
       .filter(setting => {
         return new RegExp(setting.urlMatchPattern).test(location.href);
       })
-      .reduce<t.TypeOf<typeof DocumentTransformerSetting>>(
+      .reduce<DocumentTransformerSetting>(
         (prev, cur) => {
           return { prev, ...cur.documentTransformerSetting };
         },
@@ -57,25 +75,6 @@ class ContentScript {
           contextualTransformations: [],
         },
       );
-
-    const contentScript = new ContentScript(kyujitai, activeSetting);
-
-    if (contentScript.documentTransformerSetting.transformContent) {
-      // kyujitaize body
-      for (const node of contentScript.retriveTerminals(document.body)) {
-        contentScript.kyujitaizeNode(node);
-      }
-    }
-
-    // Observe DOM updates
-    contentScript.observeDomUpdates(
-      document.body,
-      contentScript.documentTransformerSetting,
-    );
-
-    // eslint-disable-next-line no-console
-    console.log('Hanzily: initialization completed');
-    return contentScript;
   };
 
   kyujitaizeNode = async (node: Node, force = false) => {
@@ -141,14 +140,11 @@ class ContentScript {
     this.kyujitaizeNode(target, true);
   };
 
-  observeDomUpdates = (
-    element: Node,
-    storage: t.TypeOf<typeof DocumentTransformerSetting>,
-  ) => {
+  observeDomUpdates = (element: Node) => {
     // Add mutation observer to the body and subscribe for updates of children
     new MutationObserver(async records => {
       for (const { target, addedNodes, oldValue } of records) {
-        if (storage.transformContent) {
+        if (this.documentTransformerSetting.transformContent) {
           if (addedNodes) this.handleNodeAdded(addedNodes);
           if (oldValue) this.handleCharacterDataMutated(target);
         }

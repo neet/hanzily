@@ -1,40 +1,51 @@
 import { isLeft } from 'fp-ts/lib/Either';
-import { browser } from 'webextension-polyfill-ts';
-import { SyncStorage } from '../sync-storage';
+import { browser, Runtime } from 'webextension-polyfill-ts';
+import { SyncStorageCodec } from '../sync-storage';
 
-const populateSyncStorage = () => {
-  const initialStorage = SyncStorage.encode({
-    preferences: {
-      state: 'enabled',
-      siteSettings: [
-        {
-          title: '全てのWebサイト',
-          thumbnail: undefined,
-          urlMatchPattern: '*',
-          documentTransformerSetting: {
-            transformContent: true,
-            transformInput: false,
-            ignoreNodePatterns: [],
-            contextualTransformations: [],
+export class Background {
+  constructor() {
+    browser.runtime.onInstalled.addListener(this.handleInstalled);
+  }
+
+  static async init() {
+    const storageData = await browser.storage.sync.get();
+    const storage = SyncStorageCodec.decode(storageData);
+
+    if (isLeft(storage)) {
+      Background.populateSyncStorage();
+    }
+
+    return new Background();
+  }
+
+  static async populateSyncStorage() {
+    const initialStorage = SyncStorageCodec.encode({
+      preferences: {
+        state: 'enabled',
+        siteSettings: [
+          {
+            title: '全てのWebサイト',
+            thumbnail: undefined,
+            urlMatchPattern: '*',
+            documentTransformerSetting: {
+              transformContent: true,
+              transformInput: false,
+              ignoreNodePatterns: [],
+              contextualTransformations: [],
+            },
           },
-        },
-      ],
-    },
-  });
+        ],
+      },
+    });
 
-  browser.storage.sync.set(initialStorage);
-};
-
-(async () => {
-  const storage = SyncStorage.decode(await browser.storage.sync.get());
-
-  if (isLeft(storage)) {
-    populateSyncStorage();
+    return await browser.storage.sync.set(initialStorage);
   }
-})();
 
-browser.runtime.onInstalled.addListener(e => {
-  if (e.reason === 'install') {
-    populateSyncStorage();
+  async handleInstalled(e: Runtime.OnInstalledDetailsType) {
+    if (e.reason === 'install') {
+      await Background.populateSyncStorage();
+    }
   }
-});
+}
+
+Background.init();

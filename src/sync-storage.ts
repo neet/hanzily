@@ -1,6 +1,6 @@
 import * as t from 'io-ts';
 
-export const DocumentTransformerSetting = t.type({
+export const DocumentTransformerSettingCodec = t.type({
   /** Whether transform the web content */
   transformContent: t.boolean,
   /** Whether transform the user's input */
@@ -19,7 +19,7 @@ export const DocumentTransformerSetting = t.type({
   ),
 });
 
-export const SiteSetting = t.type({
+export const SiteSettingCodec = t.type({
   /** Label of this site */
   title: t.string,
   /** URL of the icon  */
@@ -27,16 +27,22 @@ export const SiteSetting = t.type({
   /** Activeate when matched to this pattern */
   urlMatchPattern: t.string,
   /** Per-site transformer setting */
-  documentTransformerSetting: DocumentTransformerSetting,
+  documentTransformerSetting: DocumentTransformerSettingCodec,
 });
 
-export const Preferences = t.type({
+export const PreferencesCodec = t.type({
   /** State of the extension */
   state: t.union([t.literal('enabled'), t.literal('disabled')]),
   /** Per-site setting */
-  siteSettings: t.array(SiteSetting),
+  siteSettings: t.array(SiteSettingCodec),
 });
 
-export const SyncStorage = t.type({
-  preferences: Preferences,
+export const SyncStorageCodec = t.type({
+  preferences: PreferencesCodec,
 });
+
+// prettier-ignore
+export type DocumentTransformerSetting = t.TypeOf<typeof DocumentTransformerSettingCodec>;
+export type SiteSetting = t.TypeOf<typeof SiteSettingCodec>;
+export type Preferences = t.TypeOf<typeof PreferencesCodec>;
+export type SyncStorage = t.TypeOf<typeof SyncStorageCodec>;
