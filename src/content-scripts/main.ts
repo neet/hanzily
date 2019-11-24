@@ -19,20 +19,12 @@ const defaultBannedTagNames = [
   'path',
 ];
 
-// const editableQueries = ['input', 'textarea', '*[contenteditable="true"]'];
+const editableQueries = ['input', 'textarea'];
 
 class ContentScript {
   private readonly kyujitai: Kyujitai;
   private readonly kyujitaizedNodes = new WeakSet<Node>();
   private readonly documentTransformerSetting: DocumentTransformerSetting;
-
-  private constructor(
-    kyujitai: Kyujitai,
-    activeSetting: DocumentTransformerSetting,
-  ) {
-    this.kyujitai = kyujitai;
-    this.documentTransformerSetting = activeSetting;
-  }
 
   static init = async () => {
     const rawdata = await browser.storage.sync.get();
@@ -44,20 +36,42 @@ class ContentScript {
     const activeSetting = ContentScript.getActiveSetting(preferences);
     const contentScript = new ContentScript(kyujitai, activeSetting);
 
-    // kyujitaize body
-    if (contentScript.documentTransformerSetting.transformContent) {
-      for (const node of contentScript.retriveTerminals(document.body)) {
-        contentScript.kyujitaizeNode(node);
-      }
-    }
-
-    // Observe DOM updates
-    contentScript.observeDomUpdates(document.body);
-
     // eslint-disable-next-line no-console
     console.log('Hanzily: initialization completed');
     return contentScript;
   };
+
+  private constructor(
+    kyujitai: Kyujitai,
+    activeSetting: DocumentTransformerSetting,
+  ) {
+    this.kyujitai = kyujitai;
+    this.documentTransformerSetting = activeSetting;
+
+    // Transform Content
+    if (this.documentTransformerSetting.transformContent) {
+      for (const node of this.retriveTerminals(document.body)) {
+        this.kyujitaizeNode(node);
+      }
+
+      this.observeDomUpdates(document.body);
+    }
+
+    // Transform Input
+    if (this.documentTransformerSetting.transformInput) {
+      const elements = editableQueries
+        .map(query => Array.from(document.querySelectorAll(query)))
+        .flat();
+
+      for (const element of elements) {
+        element.addEventListener('change', e => {
+          if (e.currentTarget) {
+            this.kyujitai.kyujitaize(e.currentTarget.value);
+          }
+        });
+      }
+    }
+  }
 
   private static getActiveSetting = (preferences: Preferences) => {
     return preferences.siteSettings
@@ -144,10 +158,8 @@ class ContentScript {
     // Add mutation observer to the body and subscribe for updates of children
     new MutationObserver(async records => {
       for (const { target, addedNodes, oldValue } of records) {
-        if (this.documentTransformerSetting.transformContent) {
-          if (addedNodes) this.handleNodeAdded(addedNodes);
-          if (oldValue) this.handleCharacterDataMutated(target);
-        }
+        if (addedNodes) this.handleNodeAdded(addedNodes);
+        if (oldValue) this.handleCharacterDataMutated(target);
       }
     }).observe(element, {
       characterData: true,
