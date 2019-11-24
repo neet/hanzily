@@ -2,7 +2,7 @@ import { browser } from 'webextension-polyfill-ts';
 import { isLeft } from 'fp-ts/lib/Either';
 import * as t from 'io-ts';
 import { Kyujitai } from '@neetshin/kyujitai';
-import { dataset } from '@neetshin/kyujitai/esm/dataset';
+import { dataset } from '@neetshin/kyujitai/dataset';
 import { SyncStorage, DocumentTransformerSetting } from '../sync-storage';
 
 const defaultBannedTagNames = [
