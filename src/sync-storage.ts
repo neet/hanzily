@@ -46,3 +46,20 @@ export type DocumentTransformerSetting = t.TypeOf<typeof DocumentTransformerSett
 export type SiteSetting = t.TypeOf<typeof SiteSettingCodec>;
 export type Preferences = t.TypeOf<typeof PreferencesCodec>;
 export type SyncStorage = t.TypeOf<typeof SyncStorageCodec>;
+
+export const getActiveDocumentTransformerSetting = (preferences: Preferences) =>
+  preferences.siteSettings
+    .filter(setting => {
+      return new RegExp(setting.urlMatchPattern).test(location.href);
+    })
+    .reduce<DocumentTransformerSetting>(
+      (prev, cur) => {
+        return { prev, ...cur.documentTransformerSetting };
+      },
+      {
+        transformContent: true,
+        transformInput: false,
+        ignoreNodePatterns: [],
+        contextualTransformations: [],
+      },
+    );
